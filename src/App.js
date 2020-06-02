@@ -4,6 +4,7 @@ import './backend/buscar';
 import './teste2';
 
 const funcao = require("./backend/buscar");
+const funcao2 = `${funcao}`;
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         
       <div className = "Fonte"id = "1" >
      
-        <h1 class = "dolar" > teste2 </h1>
+        <h1 class = "dolar" > funcao2.USD.ask </h1>
 
 
        </div>

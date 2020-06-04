@@ -1,5 +1,3 @@
 
-const dolarURL =
+export const API_URL =
 "https://economia.awesomeapi.com.br/all/USD-BRL";
-
-module.exports = {dolarURL}

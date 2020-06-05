@@ -7,16 +7,12 @@ import SideBarLeft from "../components/template/SideBarLeft";
 import SideBarRight from "../components/template/SideBarLeft";
 import Main from "../components/template/Main";
 import Footer from "../components/template/Footer";
+import { Route } from "react-router-dom";
+import Routes from '../routes/routes';
 
-export default (props) => {
+export default function App() {
     return (
-        <div className="app">
-            <Logo />
-            <Header />
-            <SideBarLeft />
-            <Main />
-            <SideBarRight/>
-            <Footer />
-        </div>
+      <Routes />
     );
+
 };

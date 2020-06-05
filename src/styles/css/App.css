@@ -38,3 +38,33 @@
   border: #33003b 1px solid;
   grid-column: 1/4;
 }
+
+
+.app {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #2e8b57);
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+.app .logo {
+  background: greenyellow;
+  padding: 1em;
+}
+
+.app header {
+  background: purple;
+  padding: 1em;
+}
+
+.app div.main {
+  background: grey;
+  padding: 1em;
+}
+
+.app aside.menu {
+  background: hotpink;
+  padding: 1em;
+}

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./Dolar.css";
 
-import Display from "../display/displayValor";
+import Display from "../Display/displayValor";
 import {USD_URL} from "../../../utils/URLS";
 import axios from "axios";
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import LogoDolar from '../../assets/dollar.png'
+import LogoDolar from '../../../assets/dollar.png'
 
 
 export default class Cambio extends Component {

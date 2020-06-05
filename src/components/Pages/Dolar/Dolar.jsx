@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Dolar.css";
-import Display from "../../Pages/Display/displayValor";
+import Display from "../display/displayValor";
 import {USD_URL} from "../../../utils/URLS";
 import axios from "axios";
 

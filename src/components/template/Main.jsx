@@ -1,3 +1,3 @@
 import React from "react";
-
-export default (props) => <div>Main</div>;
+import "../../styles/css/Main.css";
+export default (props) => <div className="main">Main</div>;

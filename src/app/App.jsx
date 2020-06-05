@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/css/App.css";
-import Routes from "../routes/routes";
 
 import Logo from "../components/template/Logo";
 import Header from "../components/template/Header";

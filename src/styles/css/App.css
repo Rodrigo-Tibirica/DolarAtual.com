@@ -6,3 +6,23 @@
   grid-template-columns: 100px 1fr;
   grid-template-rows: 100px 1fr 100px;
 }
+
+.app .logo {
+  background: greenyellow;
+  padding: 1em;
+}
+
+.app header {
+  background: purple;
+  padding: 1em;
+}
+
+.app div.main {
+  background: grey;
+  padding: 1em;
+}
+
+.app aside.menu {
+  background: hotpink;
+  padding: 1em;
+}

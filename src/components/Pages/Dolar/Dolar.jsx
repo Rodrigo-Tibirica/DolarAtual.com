@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./Dolar.css";
-import Display from "./displayValor";
-import {USD_URL} from "../utils/URLS";
+import Display from "../../Pages/Display/displayValor";
+import {USD_URL} from "../../../utils/URLS";
 import axios from "axios";
 
 export default class Cambio extends Component {
     state = {
         valor: "",
+        data: "",
     };
     constructor(params) {
         super();
@@ -27,7 +28,8 @@ export default class Cambio extends Component {
         })
             .then((response) => {
                 const valor = parseFloat(response.data.USD.ask).toFixed(2)
-                this.setState({valor});
+                const data = (response.data.USD.create_date)
+                this.setState({valor, data});
             })
             .catch((error) => {
                 console.log(error);
@@ -38,10 +40,12 @@ export default class Cambio extends Component {
         //  this.buscarDolar()
         
         return (
-            <div className="cambio">
-                <span id="simbolo">$</span>
-                <h1>Dolar Hoje</h1>
+            <div className= "cambio">
+                <span id="simbolo"> $</span>
+                <h1>Dólar Hoje</h1>
                 <Display id="1" value={this.state.valor} />
+                <Display id="1" value={"atualizado em: " +  this.state.data} />
+                
             </div>
         );
     }

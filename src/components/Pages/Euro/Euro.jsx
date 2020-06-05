@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./Euro.css";
-import Display from "../components/displayValor";
-import {EUR_URL} from "../utils/URLS";
+import Display from "../../Pages/Display/displayValor";
+import {EUR_URL} from "../../../utils/URLS";
 import axios from "axios";
 
 export default class Cambio extends Component {
     state = {
         valor: "",
+        data: "",
     };
     constructor(params) {
         super();
@@ -27,7 +28,8 @@ export default class Cambio extends Component {
         })
             .then((response) => {
                 const valor = parseFloat(response.data.EUR.ask).toFixed(2)
-                this.setState({valor});
+                const data = (response.data.EUR.create_date)
+                this.setState({valor, data});
             })
             .catch((error) => {
                 console.log(error);
@@ -42,6 +44,7 @@ export default class Cambio extends Component {
                 <span id="simbolo"> €</span>
                 <h1>Euro Hoje</h1>
                 <Display id="1" value={this.state.valor} />
+                <Display id="1" value={"atualizado em: " +  this.state.data} />
             </div>
         );
     }

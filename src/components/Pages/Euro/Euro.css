@@ -1,24 +1,27 @@
 
 .cambio {
     display: grid;
-    background-color:#63666A;
-    height: 100px;
+    align-items: center;
+    background-color:#ddd2d2;
+    height: 500px;
     width: 500px;
-    color: white;
+    color: #000000;
     overflow: hidden;
+    font-size: 7px;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 25fr 1fr 1fr;
+    grid-template-areas: initial;
 }
 
  #simbolo {
     position: relative;
     display: block;
-    top: 50px;
+    top: 0px;
     left: 0;
     height: 0;
     margin: 0 auto;
     width: 200px;
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 70px;
 }

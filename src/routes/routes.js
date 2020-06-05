@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Dolar from "../components/Dolar";
-import Euro from "../components/Euro";
+import Dolar from "../components/Pages/Dolar/Dolar";
+import Euro from "../components/Pages/Euro/Euro";
 
 export default function Routes() {
     return (

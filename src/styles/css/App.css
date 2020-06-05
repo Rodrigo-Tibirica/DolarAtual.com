@@ -2,27 +2,39 @@
   margin: 0;
   display: grid;
   height: 100vh;
-  background: linear-gradient(to bottom, #ffffff, #2e8b57);
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 100px 1fr 100px;
+  background: white;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 12% 1fr 12%;
 }
 
-.app .logo {
-  background: greenyellow;
-  padding: 1em;
+.app aside.logo {
+  background: #bbbcbc;
+  border: #33003b 1px solid;
 }
 
-.app header {
-  background: purple;
-  padding: 1em;
+.app header.header {
+  background: #bbbcbc;
+  border: #33003b 1px solid;
+  grid-column: 2/4;
 }
 
 .app div.main {
-  background: grey;
-  padding: 1em;
+  background: #bbbcbc;
+  border: #33003b 1px solid;
 }
 
-.app aside.menu {
-  background: hotpink;
-  padding: 1em;
+.app aside.right-bar {
+  background: #bbbcbc;
+  border: #33003b 1px solid;
+}
+
+.app aside.left-bar {
+  background: #bbbcbc;
+  border: #33003b 1px solid;
+}
+
+.app footer.footer {
+  background-color: #bbbcbc;
+  border: #33003b 1px solid;
+  grid-column: 1/4;
 }

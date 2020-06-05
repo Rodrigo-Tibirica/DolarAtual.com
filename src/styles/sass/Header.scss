@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    align-self: end;
+    color: blue;
+    ul {
+        // color: red
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 15px;
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: navy;
+            }
+        }
+    }
+}
+
+a {
+    color: red;
+}

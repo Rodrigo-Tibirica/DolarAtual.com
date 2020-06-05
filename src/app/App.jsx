@@ -3,7 +3,8 @@ import "../styles/css/App.css";
 
 import Logo from "../components/template/Logo";
 import Header from "../components/template/Header";
-import Nav from "../components/template/Nav";
+import SideBarLeft from "../components/template/SideBarLeft";
+import SideBarRight from "../components/template/SideBarLeft";
 import Main from "../components/template/Main";
 import Footer from "../components/template/Footer";
 
@@ -12,8 +13,9 @@ export default (props) => {
         <div className="app">
             <Logo />
             <Header />
-            <Nav />
+            <SideBarLeft />
             <Main />
+            <SideBarRight/>
             <Footer />
         </div>
     );

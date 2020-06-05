@@ -1,0 +1,8 @@
+.app {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #2e8b57);
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+}

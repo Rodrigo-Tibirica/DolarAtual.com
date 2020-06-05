@@ -1,30 +1,19 @@
 
-.Container {
-    
+.cambio {
+    display: grid;
     align-items: center;
     background-color:#ddd2d2;
     height: 500px;
     width: 500px;
     color: #000000;
     overflow: hidden;
-  
+    font-size: 7px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 25fr 1fr 1fr;
+    grid-template-areas: initial;
 }
 
-.LogoMoeda img{
-    max-width:250px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    align-items: center;
-}
-
-.NomeMoeda{
-    
-
-
-} 
-/*
- #Container {
+ #simbolo {
     position: relative;
     display: block;
     top: 0px;
@@ -35,4 +24,4 @@
     text-align: left;
     color: black;
     font-size: 70px;
-}*/
+}

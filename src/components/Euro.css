@@ -1,0 +1,24 @@
+
+.cambio {
+    display: grid;
+    background-color:#63666A;
+    height: 100px;
+    width: 500px;
+    color: white;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+ #simbolo {
+    position: relative;
+    display: block;
+    top: 50px;
+    left: 0;
+    height: 0;
+    margin: 0 auto;
+    width: 200px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Cambio.css";
-import Display from "../components/displayValor";
-import {API_URL} from "../utils/URLS";
+import "./Dolar.css";
+import Display from "./displayValor";
+import {USD_URL} from "../utils/URLS";
 import axios from "axios";
 
 export default class Cambio extends Component {
@@ -23,7 +23,7 @@ export default class Cambio extends Component {
         return axios({
           
             method: "GET",
-            url: API_URL,
+            url: USD_URL,
         })
             .then((response) => {
                 const valor = parseFloat(response.data.USD.ask).toFixed(2)

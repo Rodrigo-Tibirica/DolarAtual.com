@@ -1,0 +1,41 @@
+$bg-color: linear-gradient(to bottom, #ffffff, #2e8b57);
+$logo-height: 100px;
+$header-height: 100px;
+$aside-width: 100px;
+$footer-height: 100px;
+// display: flex;
+// height: 100vh;
+// /* justify-content: center;
+// align-items: center;
+// text-align: center; */
+// color: #ffffff;
+// -webkit-font-smoothing: antialiased;
+// -moz-osx-font-smoothing: grayscale;
+
+.app {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    background: $bg-color;
+     grid-template-columns: $aside-width 1fr ;
+     grid-template-rows: $header-height 1fr $footer-height;
+}
+
+.app {
+    .logo {
+        background: greenyellow;
+        padding: 1em;
+    }
+    header {
+        background: purple;
+        padding: 1em;
+    }
+    div.main {
+        background: grey;
+        padding: 1em;
+    }
+    aside.menu {
+        background: hotpink;
+        padding: 1em;
+    }
+}

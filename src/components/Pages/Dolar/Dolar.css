@@ -1,16 +1,22 @@
 
-.cambio {
-    display: grid;
+.Container {
     background-color: #c0b8b8;
     height: 100px;
-    width: 500px;
+    width: 100px;
     color: white;
     overflow: hidden;
-    font-size: 7px;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 17px;
+   
+
 }
 
+.LogoMoeda   {
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+/*
  #simbolo {
     position: relative;
     display: block;
@@ -22,4 +28,9 @@
     text-align: left;
     color: #ffffff;
     font-size: 20px;
+}
+*/
+.Container  {
+
+font-size: 10px;
 }

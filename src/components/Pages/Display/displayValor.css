@@ -1,5 +1,5 @@
 .dolarHoje {
-    background-color: #ddd2d2;
+    background-color: #bd7c2d;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -8,5 +8,5 @@
     font-style: bold;
     overflow: hidden;
     color: white;
-    size: 50px;
+    font-size: 50px;
 }

@@ -2,8 +2,8 @@ import React from "react";
 import "../../styles/css/Header.css";
 
 import Router from '../../routes/routes'
-import Dolar from "../Pages/Dolar/Dolar"
-import Euro from "../Pages/Euro/Euro"
+import Dolar from "../pages/dolar/Dolar"
+import Euro from "../pages/euro/Euro"
 
 export default (props) => {
     return (

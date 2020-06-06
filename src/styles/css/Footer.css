@@ -15,68 +15,113 @@
   src: url("../fonts/TenaliRamakrishna-Regular.ttf");
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-}
 @font-face {
   font-family: "MontBlack";
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
 nav1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: whitesmoke;
   width: 1000%;
   height: 100%;
   margin: 0;
   font-family: Quicksand;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 auto;
 }
 
-nav ul {
+nav1 ul1 {
   display: -webkit-box;
   display: -ms-flexbox;
-}
-nav1 ul1 {
   display: flex;
   list-style-type: none;
 }
 
-nav ul li {
+nav1 ul1 li1 {
   padding: 15px;
 }
 
-nav ul li a {
-  color: white ;
-  font-family: FonteTenali;
-}
 nav1 ul1 li1 a3 {
   color: black;
   font-family: Quicksand;
   font-size: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-nav ul li u a:hover {
+nav1 ul1 li1 a3 .footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  width: 1000%;
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 auto;
+}
+
+nav1 ul1 li1 a3 .footernav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav1 ul1 li1 a3 .footernav ul li {
+  padding: 15px;
+}
+
+nav1 ul1 li1 a3 .footernav ul li a {
   color: red;
+  font-family: FonteTenali;
 }
 
-nav ul li a {
+nav1 ul1 li1 a3 .footernav ul li a a2 {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
   font-size: 16px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-nav ul li a {
+nav1 ul1 li1 a3 .footernav ul li a a1 {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
   font-size: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav1 ul1 li1 a3 .footernav ul li a a {
+  text-decoration: none;
+  color: red;
+  font-family: FonteTenali;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav1 ul1 li1 a3 .footernav ul li a a {
+  text-decoration: none;
+  color: red;
+  font-family: FonteTenali;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

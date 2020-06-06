@@ -1,11 +1,6 @@
 $default-bg-color: green;
 $default-border: #33003b 1px solid;
-@font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-family: "MontserratBlack";
-    src: url("../fonts/Montserrat-Black.ttf");
-}
+@import "_Fontes";
 
 .Euro {
     display: grid;
@@ -44,30 +39,34 @@ $default-border: #33003b 1px solid;
     .valor {
         display: flex;
         border-radius: 100px;
-        border: grey 2px solid;
+        border: white 2px solid;
         justify-content: center;
         grid-row: 3/4;
         grid-column: 2/4;
 
         p {
             font-size: 50px;
-            font-family: MontserratBlack;
+            font-family: Quicksand;
         }
     }
 
     .atualizado {
         display: flex;
-        border: grey 2px solid;
+        border: white 2px solid;
         justify-content: center;
         grid-column: 2/4;
         grid-row: 4/5;
 
         p {
             font-size: 20px;
+            font-family: Quicksand;
+
         }
 
         h2 {
             font-size: 20px;
+            font-family: Quicksand;
+
         }
     }
 }

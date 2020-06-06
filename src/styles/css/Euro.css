@@ -5,6 +5,11 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
 .Euro {
   display: -ms-grid;
   display: grid;
@@ -70,7 +75,7 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 100px;
-  border: grey 2px solid;
+  border: white 2px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -84,14 +89,14 @@
 
 .Euro .valor p {
   font-size: 50px;
-  font-family: MontserratBlack;
+  font-family: Quicksand;
 }
 
 .Euro .atualizado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: grey 2px solid;
+  border: white 2px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -105,8 +110,10 @@
 
 .Euro .atualizado p {
   font-size: 20px;
+  font-family: Quicksand;
 }
 
 .Euro .atualizado h2 {
   font-size: 20px;
+  font-family: Quicksand;
 }

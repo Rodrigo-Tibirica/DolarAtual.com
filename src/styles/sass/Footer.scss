@@ -9,7 +9,7 @@
   }
 nav1 {
     display: flex;
-    background-color: #90ee90;
+    background-color: #white;
     width: 1000%;
     height: 100%;
     margin: 0;
@@ -26,9 +26,11 @@ nav1 {
             padding: 15px;
             a3{
 
-              color: white;
+              color: black;
               font-family: FonteTenali;
               font-size: 20px;
+              justify-content: center;
+
 
             }
             a3:hover{
@@ -38,16 +40,19 @@ nav1 {
 
             a2 {
               text-decoration: none;
-              color: white;
+              color: black;
               font-family: FonteTenali;
-              font-size: 20px;
+              font-size: 16px;
+              justify-content: center;
 
             }
             a1 {
                 text-decoration: none;
-                color: white;
+                color: black;
                 font-family: FonteTenali;
                 font-size: 20px;
+                justify-content: center;
+
               }
              
           }

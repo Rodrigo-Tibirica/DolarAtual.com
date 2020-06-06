@@ -92,7 +92,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: grey 2px solid;
+  border: grey 0px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

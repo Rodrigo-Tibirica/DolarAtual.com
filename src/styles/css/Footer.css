@@ -12,7 +12,7 @@ nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #90ee90;
+  background-color: #white;
   width: 1000%;
   height: 100%;
   margin: 0;
@@ -35,9 +35,12 @@ nav1 ul1 li1 {
 }
 
 nav1 ul1 li1 a3 {
-  color: white;
+  color: black;
   font-family: FonteTenali;
   font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav1 ul1 li1 a3:hover {
@@ -46,14 +49,20 @@ nav1 ul1 li1 a3:hover {
 
 nav1 ul1 li1 a2 {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: FonteTenali;
-  font-size: 20px;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav1 ul1 li1 a1 {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: FonteTenali;
   font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

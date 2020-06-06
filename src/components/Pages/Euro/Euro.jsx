@@ -58,7 +58,7 @@ export default class Cambio extends Component {
                 </div>
 
                 <div className="atualizado"> 
-                    <h2>Atualizado em:</h2>
+                    <p>Atualizado em:  &nbsp; </p>
                     <p> {this.state.data}</p>
                 </div>
             </div>

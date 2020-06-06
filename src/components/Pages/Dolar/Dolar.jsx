@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../../../styles/css/Dolar.css";
 import { USD_URL } from "../../../utils/URLS";
 import axios from "axios";
-import LogoDolar from "../../assets/dollar.png";
+import LogoDolar from "../../../assets/dollar.png";
 import Main from "../../template/Main";
 
 export default class Cambio extends Component {

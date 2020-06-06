@@ -1,46 +1,40 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Mont";
   src: url("../fonts/Montserrat-Regular.ttf");
-  font-family: "MontserratBlack";
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
+/* No CSS */
+@font-face {
+  font-family: "FonteTenali";
+  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MontBlack";
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
 .Dolar {
-  display: -ms-grid;
   display: grid;
-  height: 100%;
-  margin-top: 2em;
-  width: 100%;
-  background-color: #fff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: red;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   font-family: Montserrat;
   padding: 15px 15px;
 }
 
 .Dolar .logo-moeda {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  align-items: center;
+  justify-content: center;
   grid-column: 2/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
@@ -52,34 +46,18 @@
 }
 
 .Dolar .nome-moeda {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
+  justify-content: center;
   grid-row: 2/3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2/4;
 }
 
 .Dolar .valor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 100px;
-  border: grey 2px solid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
+  border: #33003b 1px solid;
+  justify-content: center;
   grid-row: 3/4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2/4;
 }
 
@@ -89,18 +67,10 @@
 }
 
 .Dolar .atualizado {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border: grey 0px solid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  border: #33003b 1px solid;
+  justify-content: center;
   grid-column: 2/4;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 

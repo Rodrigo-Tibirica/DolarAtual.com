@@ -1,31 +1,33 @@
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
 /* No CSS */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
-  font-family: "MontserratBlack";
-  src: url("../fonts/Montserrat-Black.ttf");
   font-family: "FonteTenali";
   src: url("../fonts/TenaliRamakrishna-Regular.ttf");
 }
 
+@font-face {
+  font-family: "MontBlack";
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
 nav1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background-color: #white;
-  width: 1000%;
-  height: 100%;
   margin: 0;
   font-family: Montserrat;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0 auto;
 }
 
 nav1 ul1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
@@ -38,9 +40,7 @@ nav1 ul1 li1 a3 {
   color: black;
   font-family: FonteTenali;
   font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 nav1 ul1 li1 a3:hover {
@@ -52,9 +52,7 @@ nav1 ul1 li1 a2 {
   color: black;
   font-family: FonteTenali;
   font-size: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 nav1 ul1 li1 a1 {
@@ -62,7 +60,5 @@ nav1 ul1 li1 a1 {
   color: black;
   font-family: FonteTenali;
   font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }

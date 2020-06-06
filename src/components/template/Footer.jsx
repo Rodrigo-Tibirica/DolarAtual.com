@@ -8,8 +8,8 @@ import "../../styles/css/Footer.css";
 //}
 export default (props) => {
     return (
-        <header className="footer">
-        <nav1>
+        <footer className="footer">Footer
+        {/* <nav1>
             <ul1>
                 <li1>
                 <a3 href="">Innervisions Lab Team</a3>
@@ -17,8 +17,8 @@ export default (props) => {
                 <a1>2020 © All right Reversed.Innervisions Lab ® </a1>
                 </li1>
             </ul1> 
-        </nav1>  
-</header>
+        </nav1>   */}
+</footer>
     );
 };
 

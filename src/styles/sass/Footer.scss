@@ -2,34 +2,9 @@
 
 @import "_Fontes";
 
-nav1 {
-    display: flex;
-    background-color: whitesmoke;
-    width: 1000%;
-    height: 100%;
-    margin: 0;
-    font-family: Quicksand;
-    justify-content: center;
-    padding: 0 auto;
-
-    ul1 {
-        display: flex;
-        list-style-type: none;
-        
-
-        li1 {
-            padding: 15px;
-            a3{
-
-              color: black;
-              font-family: Quicksand;
-              font-size: 20px;
-              justify-content: center;
-
-
   .footernav {
       display: flex;
-      background-color: black;
+      background-color: white;
       width: 1000%;
       height: 100%;
       margin: 0;
@@ -43,31 +18,14 @@ nav1 {
           
 
           li {
-          
 
               padding: 15px;
               a{  
                 color: red;
-                font-family: FonteTenali;
-            a2 {
-              text-decoration: none;
-              color: black;
-              font-family: Quicksand;
-              font-size: 16px;
-              justify-content: center;
-
-            }
-            a1 {
-                text-decoration: none;
-                color: black;
-                font-family: Quicksand;
-                font-size: 20px;
-                justify-content: center;
               }
 
               a {
                 text-decoration: none;
-                color: red;
                 font-family: FonteTenali;
                 font-size: 16px;
                 justify-content: center;
@@ -75,7 +33,6 @@ nav1 {
               }
               a {
                   text-decoration: none;
-                  color: red;
                   font-family: FonteTenali;
                   font-size: 20px;
                   justify-content: center;
@@ -85,10 +42,3 @@ nav1 {
             }
         }
    }
-  }
-}
-        }
-    
-      }
-    
-    }

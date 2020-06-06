@@ -15,20 +15,16 @@
   src: url("../fonts/TenaliRamakrishna-Regular.ttf");
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-}
+
 @font-face {
   font-family: "MontBlack";
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
-nav1 {
+
+nav {
   display: flex;
-  background-color: whitesmoke;
+  background-color: white;
   width: 1000%;
   height: 100%;
   margin: 0;
@@ -41,7 +37,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
 }
-nav1 ul1 {
+nav ul {
   display: flex;
   list-style-type: none;
 }
@@ -54,7 +50,7 @@ nav ul li a {
   color: white ;
   font-family: FonteTenali;
 }
-nav1 ul1 li1 a3 {
+nav ul li a {
   color: black;
   font-family: Quicksand;
   font-size: 20px;

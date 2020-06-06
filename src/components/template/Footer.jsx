@@ -9,7 +9,7 @@ import "../../styles/css/Footer.css";
 export default (props) => {
     return (
         <footer className="footer">
-        <nav1 className = "footernav">
+        <nav className = "footernav">
             <ul>
                 <li>
                 <u>
@@ -19,7 +19,7 @@ export default (props) => {
                 <a>2020 © All right Reversed. Innervisions Lab </a>
                 </li>
             </ul> 
-        </nav1>  
+        </nav>  
         </footer>
     );
 };

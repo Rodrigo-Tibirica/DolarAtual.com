@@ -20,36 +20,11 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
-.footer {
+.footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: whitesmoke;
-  width: 1000%;
-  height: 100%;
-  margin: 0;
-  font-family: Quicksand;
-  justify-content: center;
-  padding: 0 auto;
-}
-
-.footer ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.footer ul li {
-  padding: 15px;
-}
-
-.footer ul li a {
-  color: black;
-  font-family: Quicksand;
-  font-size: 20px;
-  justify-content: center;
-}
-
-.footer ul li a .footernav {
-  display: flex;
-  background-color: white;
   width: 1000%;
   height: 100%;
   margin: 0;
@@ -58,46 +33,14 @@
   padding: 0 auto;
 }
 
-.footer ul li a .footernav ul {
+.footernav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-.footer ul li a .footernav ul li {
+.footernav ul li {
   padding: 15px;
 }
 
-.footer ul li a .footernav ul li a {
-  color: red;
-  font-family: FonteTenali;
-}
-
-.footer ul li a .footernav ul li a a {
-  text-decoration: none;
-  color: black;
-  font-family: Quicksand;
-  font-size: 16px;
-  justify-content: center;
-}
-
-.footer ul li a .footernav ul li a a {
-  text-decoration: none;
-  color: black;
-  font-family: Quicksand;
-  font-size: 20px;
-  justify-content: center;
-}
-
-.footer ul li a .footernav ul li a a {
-  text-decoration: none;
-  font-family: FonteTenali;
-  font-size: 16px;
-  justify-content: center;
-}
-
-.footer ul li a .footernav ul li a a {
-  text-decoration: none;
-  font-family: FonteTenali;
-  font-size: 20px;
-  justify-content: center;
-}

@@ -8,17 +8,19 @@ import "../../styles/css/Footer.css";
 //}
 export default (props) => {
     return (
-        <header className="footer">
-        <nav1>
-            <ul1>
-                <li1>
-                <a3 href="">Innervisions Lab Team</a3>
-                <a2> Project developed by Eduardo Gomes, Fabio Ribeiro and Rodrigo Tibiriçá.   </a2>
-                <a1>2020 © All right Reversed.Innervisions Lab ® </a1>
-                </li1>
-            </ul1> 
+        <footer className="footer">
+        <nav1 className = "footernav">
+            <ul>
+                <li>
+                <u>
+                <a href="https://www.google.com/">Innervisions Lab Team.</a>
+                </u>
+                <a> Project developed by Eduardo Gomes, Fabio Ribeiro and Rodrigo Tibiriçá. <br />  </a>
+                <a>2020 © All right Reversed. Innervisions Lab </a>
+                </li>
+            </ul> 
         </nav1>  
-</header>
+</footer>
     );
 };
 

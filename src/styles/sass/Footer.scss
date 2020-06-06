@@ -7,57 +7,51 @@
     font-family: "FonteTenali";
     src: url("../fonts/TenaliRamakrishna-Regular.ttf");
   }
-nav1 {
-    display: flex;
-    background-color: #white;
-    width: 1000%;
-    height: 100%;
-    margin: 0;
-    font-family: Montserrat;
-    justify-content: center;
-    padding: 0 auto;
-
-    ul1 {
-        display: flex;
-        list-style-type: none;
-        
-
-        li1 {
-            padding: 15px;
-            a3{
-
-              color: black;
-              font-family: FonteTenali;
-              font-size: 20px;
-              justify-content: center;
 
 
-            }
-            a3:hover{
-              color: navy;
-              
-            }
+  .footernav {
+      display: flex;
+      background-color: black;
+      width: 1000%;
+      height: 100%;
+      margin: 0;
+      font-family: Montserrat;
+      justify-content: center;
+      padding: 0 auto;
 
-            a2 {
-              text-decoration: none;
-              color: black;
-              font-family: FonteTenali;
-              font-size: 16px;
-              justify-content: center;
+      ul {
+          display: flex;
+          list-style-type: none;
+          
 
-            }
-            a1 {
-                text-decoration: none;
-                color: black;
+          li {
+          
+
+              padding: 15px;
+              a{  
+                color: red;
                 font-family: FonteTenali;
                 font-size: 20px;
                 justify-content: center;
+              }
+
+              a {
+                text-decoration: none;
+                color: red;
+                font-family: FonteTenali;
+                font-size: 16px;
+                justify-content: center;
 
               }
-             
-          }
-      }
-      
+              a {
+                  text-decoration: none;
+                  color: red;
+                  font-family: FonteTenali;
+                  font-size: 20px;
+                  justify-content: center;
 
-    
-  }
+                }
+              
+            }
+        }
+   }

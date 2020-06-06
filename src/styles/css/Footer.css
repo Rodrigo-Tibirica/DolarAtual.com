@@ -8,11 +8,11 @@
   src: url("../fonts/TenaliRamakrishna-Regular.ttf");
 }
 
-nav1 {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #white;
+  background-color: white;
   width: 1000%;
   height: 100%;
   margin: 0;
@@ -23,19 +23,19 @@ nav1 {
   padding: 0 auto;
 }
 
-nav1 ul1 {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-nav1 ul1 li1 {
+nav ul li {
   padding: 15px;
 }
 
-nav1 ul1 li1 a3 {
-  color: black;
+nav ul li a {
+  color: white ;
   font-family: FonteTenali;
   font-size: 20px;
   -webkit-box-pack: center;
@@ -43,11 +43,11 @@ nav1 ul1 li1 a3 {
           justify-content: center;
 }
 
-nav1 ul1 li1 a3:hover {
-  color: navy;
+nav ul li u a:hover {
+  color: red;
 }
 
-nav1 ul1 li1 a2 {
+nav ul li a {
   text-decoration: none;
   color: black;
   font-family: FonteTenali;
@@ -57,7 +57,7 @@ nav1 ul1 li1 a2 {
           justify-content: center;
 }
 
-nav1 ul1 li1 a1 {
+nav ul li a {
   text-decoration: none;
   color: black;
   font-family: FonteTenali;

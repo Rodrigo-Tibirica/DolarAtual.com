@@ -24,7 +24,7 @@ $aside-width: 10%;
         background: $default-bg-color;
         border: $default-border;
         grid-column: 2/4;
-        justify-content: end;
+        justify-content: flex-end;
     }
     div.main {
         background: $default-bg-color;

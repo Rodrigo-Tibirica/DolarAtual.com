@@ -1,28 +1,31 @@
-nav {
-    display: flex;
-    background-color: blue;
-    width: 40%;
-    margin: 0;
-    ul {
-        // color: red
+.header{
+    nav{
         display: flex;
-        list-style-type: none;
-
-        li {
-            padding: 15px;
-
-            a {
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: navy;
+        background-color: blue;
+        width: 40%;
+        margin: 0;
+        ul {
+            // color: red
+            display: flex;
+            list-style-type: none;
+    
+            li {
+                padding: 15px;
+    
+                a {
+                    text-decoration: none;
+                }
+    
+                a:hover {
+                    color: navy;
+                }
             }
         }
     }
+    
+    a {
+        color: red;
+    }
+    
+    
 }
-
-a {
-    color: red;
-}
-

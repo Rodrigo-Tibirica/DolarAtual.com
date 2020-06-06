@@ -1,27 +1,27 @@
-nav {
+.header nav {
   display: flex;
   background-color: blue;
   width: 40%;
   margin: 0;
 }
 
-nav ul {
+.header nav ul {
   display: flex;
   list-style-type: none;
 }
 
-nav ul li {
+.header nav ul li {
   padding: 15px;
 }
 
-nav ul li a {
+.header nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.header nav ul li a:hover {
   color: navy;
 }
 
-a {
+.header a {
   color: red;
 }

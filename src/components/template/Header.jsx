@@ -1,11 +1,9 @@
 import React from "react";
 import "../../styles/css/Header.css";
-import FormControlLabel from '@material-ui/core/';
+import Router from '../../routes/routes'
+import Dolar from "../Pages/Dolar/Dolar"
+import Euro from "../Pages/Euro/Euro"
 
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of b3ee1fa... Alterações rotas
 
 export default (props) => {
     return (
@@ -13,10 +11,10 @@ export default (props) => {
             <nav>
                 <ul>
                     <li>
-                        <a href="">DolarAgora</a>
+                        <a href = {<Router path="/euroatual"/>} >DolarAgora</a>
                     </li>
                     <li>
-                        <a href="">Euro Agora</a>
+                        <a href={Router}>Euro Agora</a>
                     </li>
                     <li>
                         <a href="">Dolar Jamaicano</a>
@@ -24,9 +22,6 @@ export default (props) => {
                 </ul>
             </nav>
 
-            <div className="DarkMode">
-                <FormControlLabel control={<Switch />} label="Darkmode" />
-            </div>
         </header>
     );
 };

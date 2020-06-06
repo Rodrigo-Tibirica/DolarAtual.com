@@ -50,7 +50,9 @@ export default class Cambio extends Component {
                 </div>
 
                 <div className="valor">
-                    <p> {this.state.valor}</p>
+                    <p> {this.state.valor}
+           
+        </p>
                 </div>
 
                 <div className="atualizado"> 

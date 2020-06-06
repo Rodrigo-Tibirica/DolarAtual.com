@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./Euro.css";
-import Display from "../display/displayValor";
+import "../../../styles/css/Euro.css";
 import {EUR_URL} from "../../../utils/URLS";
 import axios from "axios";
+import LogoEuro from "../../assets/euro.png"
 
 export default class Cambio extends Component {
     state = {
@@ -40,11 +40,27 @@ export default class Cambio extends Component {
         //  this.buscarDolar()
         
         return (
-            <div className="cambio">
-                <span id="simbolo"> €</span>
-                <h1>Euro Hoje</h1>
-                <Display id="1" value={this.state.valor} />
-                <Display id="1" value={"atualizado em: " +  this.state.data} />
+            <div className="Euro">
+                <div className="logo-moeda">
+                    <a href="/" className="logo">
+                        <img src={LogoEuro}></img>
+                    </a>
+                </div>
+
+                <div className="nome-moeda">
+                    <h1>Euro Hoje</h1>
+                </div>
+
+                <div className="valor">
+                    <p> {this.state.valor}
+           
+        </p>
+                </div>
+
+                <div className="atualizado"> 
+                    <h2>Atualizado em:</h2>
+                    <p> {this.state.data}</p>
+                </div>
             </div>
         );
     }

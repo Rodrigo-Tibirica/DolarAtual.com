@@ -7,7 +7,6 @@ import SideBarLeft from "../components/template/SideBarLeft";
 import SideBarRight from "../components/template/SideBarLeft";
 import Main from "../components/template/Main";
 import Footer from "../components/template/Footer";
-import Dolar from "../components/pages/dolar/Dolar"
 
 export default (props) => {
     return (

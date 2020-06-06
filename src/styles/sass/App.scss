@@ -1,50 +1,48 @@
-$default-bg-color: #bbbcbc;
+$default-bg-color: white;
 $default-border: #33003b 1px solid;
 $header-height: 12%;
 $footer-height: 12%;
 $aside-width: 10%;
 
-
 .app {
     margin: 0;
     display: grid;
     height: 100vh;
+    overflow: auto;
     background: white;
     grid-template-columns: $aside-width 1fr $aside-width;
     grid-template-rows: $header-height 1fr $footer-height;
-
 }
 
 .app {
     aside.logo {
         background: $default-bg-color;
-
         border: $default-border;
     }
     header.header {
         display: flex;
         background: $default-bg-color;
-        border: $default-border;
+        //border: $default-border;
         grid-column: 2/4;
         justify-content: flex-start;
     }
     div.main {
         background: $default-bg-color;
-      //  border: $default-border;
+        //border: $default-border;
     }
-    aside.right-bar {
+    aside.right {
         background: $default-bg-color;
-
+        //border: $default-border;
+    }
+    aside.left {
+        background:white;
+    
        // border: $default-border;
     }
-    aside.left-bar {
-        background: $default-bg-color;
-
-//border: $default-border;
-    }
     footer.footer {
+        // 
         background-color: $default-bg-color;
-        border: $default-border;
+      //  border: $default-border;
         grid-column: 1/4;
     }
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import "../../styles/css/Header.css";
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
 
-import Button from '@material-ui/core/Button';
+import Router from '../../routes/routes'
+import Dolar from "../Pages/Dolar/Dolar"
+import Euro from "../Pages/Euro/Euro"
 
 export default (props) => {
     return (
@@ -11,27 +11,23 @@ export default (props) => {
             <nav>
                 <ul>
                     <li>
-                        <a href="">DolarAgora</a>
+                        <a href = {<Router path="/euroatual"/>} >DolarAgora</a>
                     </li>
                     <li>
-                        <a href="">Euro Agora</a>
+                        <a href={Router}>Euro Agora</a>
                     </li>
                     <li>
                         <a href="">Dolar Jamaicano</a>
                     </li>
-
                 </ul>
-
-
-
-
-
             </nav>
 
-            <div className="DarkMode">
-                <FormControlLabel control={<Switch />} label="Darkmode" />
-                </div>
 
-        </header >
+
+        </header>
+
+
+
+      
     );
 };

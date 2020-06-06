@@ -1,12 +1,30 @@
 /* No CSS */
-@font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-family: "MontserratBlack";
-    src: url("../fonts/Montserrat-Black.ttf");
-    font-family: "FonteTenali";
-    src: url("../fonts/TenaliRamakrishna-Regular.ttf");
-  }
+
+@import "_Fontes";
+
+nav1 {
+    display: flex;
+    background-color: whitesmoke;
+    width: 1000%;
+    height: 100%;
+    margin: 0;
+    font-family: Quicksand;
+    justify-content: center;
+    padding: 0 auto;
+
+    ul1 {
+        display: flex;
+        list-style-type: none;
+        
+
+        li1 {
+            padding: 15px;
+            a3{
+
+              color: black;
+              font-family: Quicksand;
+              font-size: 20px;
+              justify-content: center;
 
 
   .footernav {
@@ -31,6 +49,18 @@
               a{  
                 color: red;
                 font-family: FonteTenali;
+            a2 {
+              text-decoration: none;
+              color: black;
+              font-family: Quicksand;
+              font-size: 16px;
+              justify-content: center;
+
+            }
+            a1 {
+                text-decoration: none;
+                color: black;
+                font-family: Quicksand;
                 font-size: 20px;
                 justify-content: center;
               }
@@ -55,3 +85,10 @@
             }
         }
    }
+  }
+}
+        }
+    
+      }
+    
+    }

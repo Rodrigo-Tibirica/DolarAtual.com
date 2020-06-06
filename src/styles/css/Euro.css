@@ -1,8 +1,6 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Mont";
   src: url("../fonts/Montserrat-Regular.ttf");
-  font-family: "MontserratBlack";
-  src: url("../fonts/Montserrat-Black.ttf");
 }
 
 @font-face {
@@ -10,12 +8,23 @@
   src: url("../fonts/Quicksand-Variable.ttf");
 }
 
+/* No CSS */
+@font-face {
+  font-family: "FonteTenali";
+  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MontBlack";
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
 .Euro {
   display: -ms-grid;
   display: grid;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
+  height: 50vh;
+  width: 50v;
+  background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

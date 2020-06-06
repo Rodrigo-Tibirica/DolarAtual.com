@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../../../styles/css/Euro.css";
 import {EUR_URL} from "../../../utils/URLS";
 import axios from "axios";
-import LogoEuro from "../../assets/euro.png"
+import LogoEuro from "../../../assets/euro.png";
 
 export default class Cambio extends Component {
     state = {

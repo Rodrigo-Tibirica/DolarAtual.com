@@ -5,13 +5,6 @@ import Router from '../../routes/routes'
 import Dolar from "../Pages/Dolar/Dolar"
 import Euro from "../Pages/Euro/Euro"
 
-var SetPage;
-
-function setPage(){
-
-Router = "/euroatual"
-
-}
 
 export default (props) => {
     return (
@@ -27,16 +20,12 @@ export default (props) => {
                     <li>
                         <a href="">Dolar Jamaicano</a>
                     </li>
-
                 </ul>
-
-
-
-
-
             </nav>
 
-        
-        </header >
+            <div className="DarkMode">
+                <FormControlLabel control={<Switch />} label="Darkmode" />
+            </div>
+        </header>
     );
 };

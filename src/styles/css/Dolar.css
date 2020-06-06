@@ -21,12 +21,14 @@
 
 .Dolar {
   display: grid;
-  background: red;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: Montserrat;
+  font-family: Quicksand;
   padding: 15px 15px;
 }
 
@@ -54,8 +56,6 @@
 
 .Dolar .valor {
   display: flex;
-  border-radius: 100px;
-  border: #33003b 1px solid;
   justify-content: center;
   grid-row: 3/4;
   grid-column: 2/4;
@@ -63,12 +63,11 @@
 
 .Dolar .valor p {
   font-size: 50px;
-  font-family: MontserratBlack;
+  font-family: Quicksand;
 }
 
 .Dolar .atualizado {
   display: flex;
-  border: #33003b 1px solid;
   justify-content: center;
   grid-column: 2/4;
   grid-row: 4/5;

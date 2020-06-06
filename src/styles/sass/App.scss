@@ -22,7 +22,7 @@ $aside-width: 10%;
     header.header {
         display: flex;
         background: $default-bg-color;
-        border: $default-border;
+        //border: $default-border;
         grid-column: 2/4;
         justify-content: flex-start;
     }

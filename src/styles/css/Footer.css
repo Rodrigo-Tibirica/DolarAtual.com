@@ -1,3 +1,4 @@
+/* No CSS */
 @font-face {
   font-family: "Mont";
   src: url("../fonts/Montserrat-Regular.ttf");
@@ -21,8 +22,11 @@
 
 nav1 {
   display: flex;
+  background-color: whitesmoke;
+  width: 1000%;
+  height: 100%;
   margin: 0;
-  font-family: Montserrat;
+  font-family: Quicksand;
   justify-content: center;
   padding: 0 auto;
 }
@@ -38,7 +42,7 @@ nav1 ul1 li1 {
 
 nav1 ul1 li1 a3 {
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 20px;
   justify-content: center;
 }
@@ -50,7 +54,7 @@ nav1 ul1 li1 a3:hover {
 nav1 ul1 li1 a2 {
   text-decoration: none;
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 16px;
   justify-content: center;
 }
@@ -58,7 +62,7 @@ nav1 ul1 li1 a2 {
 nav1 ul1 li1 a1 {
   text-decoration: none;
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 20px;
   justify-content: center;
 }

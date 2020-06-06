@@ -1,0 +1,58 @@
+/* No CSS */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "MontserratBlack";
+    src: url("../fonts/Montserrat-Black.ttf");
+    font-family: "FonteTenali";
+    src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+  }
+nav1 {
+    display: flex;
+    background-color: #90ee90;
+    width: 1000%;
+    height: 100%;
+    margin: 0;
+    font-family: Montserrat;
+    justify-content: center;
+    padding: 0 auto;
+
+    ul1 {
+        display: flex;
+        list-style-type: none;
+        
+
+        li1 {
+            padding: 15px;
+            a3{
+
+              color: white;
+              font-family: FonteTenali;
+              font-size: 20px;
+
+            }
+            a3:hover{
+              color: navy;
+              
+            }
+
+            a2 {
+              text-decoration: none;
+              color: white;
+              font-family: FonteTenali;
+              font-size: 20px;
+
+            }
+            a1 {
+                text-decoration: none;
+                color: white;
+                font-family: FonteTenali;
+                font-size: 20px;
+              }
+             
+          }
+      }
+      
+
+    
+  }

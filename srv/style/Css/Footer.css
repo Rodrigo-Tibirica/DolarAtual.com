@@ -4,17 +4,14 @@
   src: url("../fonts/Montserrat-Regular.ttf");
   font-family: "MontserratBlack";
   src: url("../fonts/Montserrat-Black.ttf");
-  font-family: "FonteTenali";
-  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
 }
 
 nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #90ee90;
+  background-color: black;
   width: 1000%;
-  height: 100%;
   margin: 0;
   font-family: Montserrat;
   -webkit-box-pack: center;
@@ -30,30 +27,15 @@ nav1 ul1 {
   list-style-type: none;
 }
 
+nav1 ul1 li1 a:hover {
+  color: green;
+}
+
 nav1 ul1 li1 {
   padding: 15px;
 }
 
-nav1 ul1 li1 a3 {
-  color: white;
-  font-family: FonteTenali;
-  font-size: 20px;
-}
-
-nav1 ul1 li1 a3:hover {
-  color: navy;
-}
-
-nav1 ul1 li1 a2 {
-  text-decoration: none;
-  color: white;
-  font-family: FonteTenali;
-  font-size: 20px;
-}
-
 nav1 ul1 li1 a1 {
   text-decoration: none;
-  color: white;
-  font-family: FonteTenali;
-  font-size: 20px;
+  color: black;
 }

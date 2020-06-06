@@ -47,7 +47,7 @@
 }
 
 .footernav ul li a {
-  color: red;
+  color: black;
   font-family: FonteTenali;
 }
 
@@ -55,6 +55,26 @@
   text-decoration: none;
   color: black;
   font-family: Quicksand;
+  font-size: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footernav ul li a a {
+  text-decoration: none;
+  color: black;
+  font-family: Quicksand;
+  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footernav ul li a a {
+  text-decoration: none;
+  color: black;
+  font-family: FonteTenali;
   font-size: 16px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -64,28 +84,8 @@
 .footernav ul li a a {
   text-decoration: none;
   color: black;
-  font-family: Quicksand;
-  font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footernav ul li a a {
-  text-decoration: none;
-  color: red;
   font-family: FonteTenali;
-  font-size: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footernav ul li a a {
-  text-decoration: none;
-  color: red;
-  font-family: FonteTenali;
-  font-size: 20px;
+  font-size: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

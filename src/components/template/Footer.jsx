@@ -9,6 +9,7 @@ import "../../styles/css/Footer.css";
 export default (props) => {
     return (
         <footer className="footernav">
+           
                 <ul>
                     <li>
                         <u>
@@ -18,6 +19,7 @@ export default (props) => {
                         <a>2020 ©️ All right Reversed. Innervisions Lab </a>
                     </li>
                 </ul>
+            
         </footer>
     );
 };

@@ -20,7 +20,7 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
-nav1 {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,18 +35,18 @@ nav1 {
   padding: 0 auto;
 }
 
-nav1 ul1 {
+.footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-nav1 ul1 li1 {
+.footer ul li {
   padding: 15px;
 }
 
-nav1 ul1 li1 a3 {
+.footer ul li a {
   color: black;
   font-family: Quicksand;
   font-size: 20px;
@@ -55,7 +55,7 @@ nav1 ul1 li1 a3 {
           justify-content: center;
 }
 
-nav1 ul1 li1 a3 .footernav {
+.footer ul li a .footernav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,23 +70,23 @@ nav1 ul1 li1 a3 .footernav {
   padding: 0 auto;
 }
 
-nav1 ul1 li1 a3 .footernav ul {
+.footer ul li a .footernav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-nav1 ul1 li1 a3 .footernav ul li {
+.footer ul li a .footernav ul li {
   padding: 15px;
 }
 
-nav1 ul1 li1 a3 .footernav ul li a {
+.footer ul li a .footernav ul li a {
   color: red;
   font-family: FonteTenali;
 }
 
-nav1 ul1 li1 a3 .footernav ul li a a2 {
+.footer ul li a .footernav ul li a a {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
@@ -96,7 +96,7 @@ nav1 ul1 li1 a3 .footernav ul li a a2 {
           justify-content: center;
 }
 
-nav1 ul1 li1 a3 .footernav ul li a a1 {
+.footer ul li a .footernav ul li a a {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
@@ -106,7 +106,7 @@ nav1 ul1 li1 a3 .footernav ul li a a1 {
           justify-content: center;
 }
 
-nav1 ul1 li1 a3 .footernav ul li a a {
+.footer ul li a .footernav ul li a a {
   text-decoration: none;
   color: red;
   font-family: FonteTenali;
@@ -116,7 +116,7 @@ nav1 ul1 li1 a3 .footernav ul li a a {
           justify-content: center;
 }
 
-nav1 ul1 li1 a3 .footernav ul li a a {
+.footer ul li a .footernav ul li a a {
   text-decoration: none;
   color: red;
   font-family: FonteTenali;

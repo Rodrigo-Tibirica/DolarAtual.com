@@ -2,7 +2,7 @@
 
 @import "_Fontes";
 
-nav1 {
+.footer {
     display: flex;
     background-color: whitesmoke;
     width: 1000%;
@@ -12,14 +12,14 @@ nav1 {
     justify-content: center;
     padding: 0 auto;
 
-    ul1 {
+    ul {
         display: flex;
         list-style-type: none;
         
 
-        li1 {
+        li {
             padding: 15px;
-            a3{
+            a{
 
               color: black;
               font-family: Quicksand;
@@ -49,7 +49,7 @@ nav1 {
               a{  
                 color: red;
                 font-family: FonteTenali;
-            a2 {
+            a {
               text-decoration: none;
               color: black;
               font-family: Quicksand;
@@ -57,7 +57,7 @@ nav1 {
               justify-content: center;
 
             }
-            a1 {
+            a {
                 text-decoration: none;
                 color: black;
                 font-family: Quicksand;

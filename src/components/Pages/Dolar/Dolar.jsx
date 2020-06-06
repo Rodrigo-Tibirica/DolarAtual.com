@@ -1,7 +1,7 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import "../../../styles/css/Dolar.css";
 import { USD_URL } from "../../../utils/URLS";
-import axios from "./node_modules/axios";
+import axios from "axios";
 import LogoDolar from "../../../assets/dollar.png";
 import Main from "../../template/Main";
 

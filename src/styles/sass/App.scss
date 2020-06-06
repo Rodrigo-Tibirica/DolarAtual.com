@@ -20,15 +20,14 @@ $aside-width: 10%;
         border: $default-border;
     }
     header.header {
+        display: flex;
         background: $default-bg-color;
-
         border: $default-border;
         grid-column: 2/4;
-        
+        justify-content: end;
     }
     div.main {
         background: $default-bg-color;
-
         border: $default-border;
     }
     aside.right-bar {

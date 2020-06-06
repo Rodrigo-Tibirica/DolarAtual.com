@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "MontserratBlack";
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
+.Dolar {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: Montserrat;
+  padding: 15px 15px;
+}
+
+.Dolar .logo-moeda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.Dolar .logo-moeda img {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+
+.Dolar .nome-moeda {
+  display: flex;
+  justify-content: center;
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+
+.Dolar .valor {
+  display: flex;
+  border-radius: 100px;
+  border: grey 2px solid;
+  justify-content: center;
+  grid-row: 3/4;
+  grid-column: 2/4;
+}
+
+.Dolar .valor p {
+  font-size: 50px;
+  font-family: MontserratBlack;
+}
+
+.Dolar .atualizado {
+  display: flex;
+  border: grey 2px solid;
+  justify-content: center;
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+.Dolar .atualizado p {
+  font-size: 20px;
+}
+
+.Dolar .atualizado h2 {
+  font-size: 20px;
+}

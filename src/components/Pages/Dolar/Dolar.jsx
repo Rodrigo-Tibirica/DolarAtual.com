@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import "./Dolar.css";
-
-import Display from "../display/displayValor";
-import {USD_URL} from "../../../utils/URLS";
+import "../../../styles/css/Dolar.css";
+import { USD_URL } from "../../../utils/URLS";
 import axios from "axios";
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import LogoDolar from '../../assets/dollar.png'
-
+import LogoDolar from "../../assets/dollar.png";
+import Main from "../../template/Main";
 
 export default class Cambio extends Component {
     state = {
@@ -20,19 +16,18 @@ export default class Cambio extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('load', this.buscarDolar)
+        window.addEventListener("load", this.buscarDolar);
     }
 
     buscarDolar() {
-        console.log('ok');
+        console.log("ok");
         return axios({
-
             method: "GET",
             url: USD_URL,
         })
             .then((response) => {
-                const valor = parseFloat(response.data.USD.ask).toFixed(2)
-                const data = (response.data.USD.create_date)
+                const valor = parseFloat(response.data.USD.ask).toFixed(2);
+                const data = response.data.USD.create_date;
                 this.setState({ valor, data });
             })
             .catch((error) => {
@@ -42,32 +37,25 @@ export default class Cambio extends Component {
 
     render() {
         //  this.buscarDolar()
-
         return (
-            <div className="Container">
-
-                <div className="LogoMoeda">
-
-                    <img src={LogoDolar}></img>
-
+            <div className="Dolar">
+                <div className="logo-moeda">
+                    <a href="/" className="logo">
+                        <img src={LogoDolar}></img>
+                    </a>
                 </div>
 
-                <div className="NomeMoeda">
-                    
+                <div className="nome-moeda">
                     <h1>Dólar Hoje</h1>
-                
                 </div>
 
-                <div className="valor" >
-
+                <div className="valor">
                     <p> {this.state.valor}</p>
-
                 </div>
 
-                <div className="atualizado">
-
+                <div className="atualizado"> 
+                    <h2>Atualizado em:</h2>
                     <p> {this.state.data}</p>
-
                 </div>
             </div>
         );

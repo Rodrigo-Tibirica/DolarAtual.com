@@ -1,7 +1,8 @@
 nav {
     display: flex;
-    align-self: end;
-    color: blue;
+    background-color: blue;
+    width: 40%;
+    margin: 0;
     ul {
         // color: red
         display: flex;
@@ -24,3 +25,4 @@ nav {
 a {
     color: red;
 }
+

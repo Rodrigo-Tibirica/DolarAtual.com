@@ -1,7 +1,8 @@
 nav {
   display: flex;
-  align-self: end;
-  color: blue;
+  background-color: blue;
+  width: 40%;
+  margin: 0;
 }
 
 nav ul {

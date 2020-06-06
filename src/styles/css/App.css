@@ -13,9 +13,11 @@
 }
 
 .app header.header {
+  display: flex;
   background: #bbbcbc;
   border: #33003b 1px solid;
   grid-column: 2/4;
+  justify-content: end;
 }
 
 .app div.main {

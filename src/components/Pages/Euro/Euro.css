@@ -1,8 +1,6 @@
-
 .Container {
-    
     align-items: center;
-    background-color:#ddd2d2;
+    background-color: red;
     height: 500px;
     width: 500px;
     color: #000000;
@@ -11,8 +9,8 @@
 }
 
 .LogoMoeda img{
-    max-width:250px;
-    max-height:150px;
+    max-width:20px;
+    max-height:10px;
     width: auto;
     height: auto;
     align-items: center;

@@ -1,9 +1,8 @@
 import React from "react";
 import "../../styles/css/Header.css";
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/';
 
-import Button from '@material-ui/core/Button';
+
 
 export default (props) => {
     return (
@@ -28,10 +27,7 @@ export default (props) => {
 
             </nav>
 
-            <div className="DarkMode">
-                <FormControlLabel control={<Switch />} label="Darkmode" />
-                </div>
-
+        
         </header >
     );
 };

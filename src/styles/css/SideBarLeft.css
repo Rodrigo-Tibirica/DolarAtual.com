@@ -1,1 +1,7 @@
-/* No CSS */
+aside {
+  background-color: white;
+}
+
+aside .right-bar {
+  background-color: red;
+}

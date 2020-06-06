@@ -1,14 +1,30 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "MontserratBlack";
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: blue;
-  width: 40%;
+  background-color: white;
+  width: 100%;
   margin: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 0 auto;
+  color: blue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav ul {
@@ -16,6 +32,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  font-family: Quicksand;
+  font-size: 10px;
 }
 
 nav ul li {
@@ -30,6 +48,16 @@ nav ul li a:hover {
   color: navy;
 }
 
+.DarkMode {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  font-family: Quicksand;
+}
+
 a {
-  color: red;
+  color: black;
+  font-family: Quicksand;
 }

@@ -1,14 +1,25 @@
+
+
+
+@import "_Fontes";
+
+
 nav {
     display: flex;
-    background-color: blue;
-    width: 40%;
+    background-color:white;
+    width: 100%;
     margin: 0;
-    justify-content: center;
+    justify-content: start;
     padding: 0 auto;
+    color: blue;
+    align-items: center;
+
     ul {
         // color: red
         display: flex;
         list-style-type: none;
+        font-family:Quicksand;
+        font-size: 10px;
 
         li {
             padding: 15px;
@@ -20,11 +31,23 @@ nav {
             a:hover {
                 color: navy;
             }
+        
         }
     }
+ 
 }
 
+
+.DarkMode { 
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: white;
+            font-family:Quicksand;
+
+}
 a {
-    color: red;
+    color: black;
+            font-family:Quicksand;
+
 }
 

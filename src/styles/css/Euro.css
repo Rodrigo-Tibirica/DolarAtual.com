@@ -5,11 +5,10 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
-.Dolar {
+.Euro {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  margin-top: 2em;
   width: 100%;
   background-color: #fff;
   -webkit-box-pack: center;
@@ -26,7 +25,7 @@
   padding: 15px 15px;
 }
 
-.Dolar .logo-moeda {
+.Euro .logo-moeda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,14 +43,14 @@
   grid-row: 1/2;
 }
 
-.Dolar .logo-moeda img {
+.Euro .logo-moeda img {
   max-width: 120px;
   max-height: 120px;
   width: auto;
   height: auto;
 }
 
-.Dolar .nome-moeda {
+.Euro .nome-moeda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +65,7 @@
   grid-column: 2/4;
 }
 
-.Dolar .valor {
+.Euro .valor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,12 +82,12 @@
   grid-column: 2/4;
 }
 
-.Dolar .valor p {
+.Euro .valor p {
   font-size: 50px;
   font-family: MontserratBlack;
 }
 
-.Dolar .atualizado {
+.Euro .atualizado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,10 +103,10 @@
   grid-row: 4/5;
 }
 
-.Dolar .atualizado p {
+.Euro .atualizado p {
   font-size: 20px;
 }
 
-.Dolar .atualizado h2 {
+.Euro .atualizado h2 {
   font-size: 20px;
 }

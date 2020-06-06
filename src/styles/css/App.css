@@ -1,44 +1,49 @@
 .app {
   margin: 0;
+  display: -ms-grid;
   display: grid;
   height: 100vh;
   overflow: auto;
   background: white;
-  grid-template-columns: 10% 1fr 10%;
-  grid-template-rows: 12% 1fr 12%;
+  -ms-grid-columns: 10% 1fr 10%;
+      grid-template-columns: 10% 1fr 10%;
+  -ms-grid-rows: 12% 1fr 12%;
+      grid-template-rows: 12% 1fr 12%;
 }
 
 .app aside.logo {
-  background: #bbbcbc;
+  background: white;
   border: #33003b 1px solid;
 }
 
 .app header.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background: #bbbcbc;
+  background: white;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .app div.main {
-  background: #bbbcbc;
-  border: #33003b 1px solid;
+  background: white;
 }
 
 .app aside.right {
-  background: #bbbcbc;
-  border: #33003b 1px solid;
+  background: white;
 }
 
 .app aside.left {
-  background: red;
-  border: #33003b 1px solid;
+  background: white;
 }
 
 .app footer.footer {
-  background-color: #bbbcbc;
-  border: #33003b 1px solid;
+  background-color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1/4;
 }

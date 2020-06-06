@@ -1,14 +1,11 @@
 .app {
   margin: 0;
-  display: -ms-grid;
   display: grid;
   height: 100vh;
   overflow: auto;
   background: white;
-  -ms-grid-columns: 10% 1fr 10%;
-      grid-template-columns: 10% 1fr 10%;
-  -ms-grid-rows: 12% 1fr 12%;
-      grid-template-rows: 12% 1fr 12%;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 12% 1fr 12%;
 }
 
 .app aside.logo {
@@ -17,16 +14,10 @@
 }
 
 .app header.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: white;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2/4;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .app div.main {
@@ -43,7 +34,5 @@
 
 .app footer.footer {
   background-color: white;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-column: 1/4;
 }

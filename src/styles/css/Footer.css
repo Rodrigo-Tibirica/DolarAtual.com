@@ -24,14 +24,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
+  background-color: whitesmoke;
   width: 1000%;
   height: 100%;
   margin: 0;
   font-family: Montserrat;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0 auto;
 }
 
@@ -46,12 +44,3 @@
   padding: 15px;
 }
 
-.footernav ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: Quicksand;
-  font-size: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}

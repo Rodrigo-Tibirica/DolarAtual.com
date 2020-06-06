@@ -2,93 +2,55 @@
 
 @import "_Fontes";
 
-.footer {
+.footernav {
+  display: flex;
+  background-color: white;
+  width: 1000%;
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat;
+  justify-content: center;
+  padding: 0 auto;
+
+  ul {
     display: flex;
-    background-color: whitesmoke;
-    width: 1000%;
-    height: 100%;
-    margin: 0;
-    font-family: Quicksand;
-    justify-content: center;
-    padding: 0 auto;
+    list-style-type: none;
 
-    ul {
-        display: flex;
-        list-style-type: none;
-        
-
-        li {
-            padding: 15px;
-            a{
-
-              color: black;
-              font-family: Quicksand;
-              font-size: 20px;
-              justify-content: center;
-
-
-  .footernav {
-      display: flex;
-      background-color: black;
-      width: 1000%;
-      height: 100%;
-      margin: 0;
-      font-family: Montserrat;
-      justify-content: center;
-      padding: 0 auto;
-
-      ul {
-          display: flex;
-          list-style-type: none;
-          
-
-          li {
-          
-
-              padding: 15px;
-              a{  
-                color: red;
-                font-family: FonteTenali;
-            a {
-              text-decoration: none;
-              color: black;
-              font-family: Quicksand;
-              font-size: 16px;
-              justify-content: center;
-
-            }
-            a {
-                text-decoration: none;
-                color: black;
-                font-family: Quicksand;
-                font-size: 20px;
-                justify-content: center;
-              }
-
-              a {
-                text-decoration: none;
-                color: red;
-                font-family: FonteTenali;
-                font-size: 16px;
-                justify-content: center;
-
-              }
-              a {
-                  text-decoration: none;
-                  color: red;
-                  font-family: FonteTenali;
-                  font-size: 20px;
-                  justify-content: center;
-
-                }
-              
-            }
+    li {
+      padding: 15px;
+      a {
+        color: red;
+        font-family: FonteTenali;
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: Quicksand;
+          font-size: 16px;
+          justify-content: center;
         }
-   }
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: Quicksand;
+          font-size: 20px;
+          justify-content: center;
+        }
+
+        a {
+          text-decoration: none;
+          color: red;
+          font-family: FonteTenali;
+          font-size: 16px;
+          justify-content: center;
+        }
+        a {
+          text-decoration: none;
+          color: red;
+          font-family: FonteTenali;
+          font-size: 20px;
+          justify-content: center;
+        }
+      }
+    }
   }
 }
-        }
-    
-      }
-    
-    }

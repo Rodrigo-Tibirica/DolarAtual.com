@@ -20,46 +20,11 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
-.footer {
+.footernav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: whitesmoke;
-  width: 1000%;
-  height: 100%;
-  margin: 0;
-  font-family: Quicksand;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 auto;
-}
-
-.footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.footer ul li {
-  padding: 15px;
-}
-
-.footer ul li a {
-  color: black;
-  font-family: Quicksand;
-  font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer ul li a .footernav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
+  background-color: white;
   width: 1000%;
   height: 100%;
   margin: 0;
@@ -70,23 +35,23 @@
   padding: 0 auto;
 }
 
-.footer ul li a .footernav ul {
+.footernav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-.footer ul li a .footernav ul li {
+.footernav ul li {
   padding: 15px;
 }
 
-.footer ul li a .footernav ul li a {
+.footernav ul li a {
   color: red;
   font-family: FonteTenali;
 }
 
-.footer ul li a .footernav ul li a a {
+.footernav ul li a a {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
@@ -96,7 +61,7 @@
           justify-content: center;
 }
 
-.footer ul li a .footernav ul li a a {
+.footernav ul li a a {
   text-decoration: none;
   color: black;
   font-family: Quicksand;
@@ -106,7 +71,7 @@
           justify-content: center;
 }
 
-.footer ul li a .footernav ul li a a {
+.footernav ul li a a {
   text-decoration: none;
   color: red;
   font-family: FonteTenali;
@@ -116,7 +81,7 @@
           justify-content: center;
 }
 
-.footer ul li a .footernav ul li a a {
+.footernav ul li a a {
   text-decoration: none;
   color: red;
   font-family: FonteTenali;

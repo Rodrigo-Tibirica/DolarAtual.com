@@ -1,19 +1,14 @@
 /* No CSS */
-@font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-family: "MontserratBlack";
-    src: url("../fonts/Montserrat-Black.ttf");
-    font-family: "FonteTenali";
-    src: url("../fonts/TenaliRamakrishna-Regular.ttf");
-  }
+
+@import "_Fontes";
+
 nav1 {
     display: flex;
-    background-color: #white;
+    background-color: whitesmoke;
     width: 1000%;
     height: 100%;
     margin: 0;
-    font-family: Montserrat;
+    font-family: Quicksand;
     justify-content: center;
     padding: 0 auto;
 
@@ -27,7 +22,7 @@ nav1 {
             a3{
 
               color: black;
-              font-family: FonteTenali;
+              font-family: Quicksand;
               font-size: 20px;
               justify-content: center;
 
@@ -41,7 +36,7 @@ nav1 {
             a2 {
               text-decoration: none;
               color: black;
-              font-family: FonteTenali;
+              font-family: Quicksand;
               font-size: 16px;
               justify-content: center;
 
@@ -49,7 +44,7 @@ nav1 {
             a1 {
                 text-decoration: none;
                 color: black;
-                font-family: FonteTenali;
+                font-family: Quicksand;
                 font-size: 20px;
                 justify-content: center;
 

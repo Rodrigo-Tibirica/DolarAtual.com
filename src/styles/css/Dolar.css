@@ -5,11 +5,15 @@
   src: url("../fonts/Montserrat-Black.ttf");
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
 .Dolar {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  margin-top: 2em;
   width: 100%;
   background-color: #fff;
   -webkit-box-pack: center;
@@ -22,7 +26,7 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: Montserrat;
+  font-family: Quicksand;
   padding: 15px 15px;
 }
 
@@ -70,8 +74,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 100px;
-  border: grey 2px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -85,14 +87,13 @@
 
 .Dolar .valor p {
   font-size: 50px;
-  font-family: MontserratBlack;
+  font-family: Quicksand;
 }
 
 .Dolar .atualizado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: grey 0px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

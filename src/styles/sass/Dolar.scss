@@ -1,23 +1,18 @@
 $default-bg-color: green;
 $default-border: #33003b 1px solid;
-@font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-family: "MontserratBlack";
-    src: url("../fonts/Montserrat-Black.ttf");
-}
+@import "_Fontes";
 
 .Dolar {
     display: grid;
     height: 100%;
-    margin-top: 2em;
+    //margin-top: 2em;
     width: 100%;
     background-color: #fff;
     justify-content: center;
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-family: Montserrat;
+    font-family: Quicksand;
     padding: 15px 15px;
 
     .logo-moeda {
@@ -43,21 +38,21 @@ $default-border: #33003b 1px solid;
 
     .valor {
         display: flex;
-        border-radius: 100px;
-        border: grey 2px solid;
+       // border-radius: 100px;
+        //border: grey 2px solid;
         justify-content: center;
         grid-row: 3/4;
         grid-column: 2/4;
 
         p {
             font-size: 50px;
-            font-family: MontserratBlack;
+            font-family: Quicksand;
         }
     }
 
     .atualizado {
         display: flex;
-        border: grey 0px solid;
+        //border: grey 0px solid;
         justify-content: center;
         grid-column: 2/4;
         grid-row: 4/5;

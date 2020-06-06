@@ -4,19 +4,22 @@
   src: url("../fonts/Montserrat-Regular.ttf");
   font-family: "MontserratBlack";
   src: url("../fonts/Montserrat-Black.ttf");
-  font-family: "FonteTenali";
-  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
 }
 
 nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #white;
+  background-color: whitesmoke;
   width: 1000%;
   height: 100%;
   margin: 0;
-  font-family: Montserrat;
+  font-family: Quicksand;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,7 +39,7 @@ nav1 ul1 li1 {
 
 nav1 ul1 li1 a3 {
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -50,7 +53,7 @@ nav1 ul1 li1 a3:hover {
 nav1 ul1 li1 a2 {
   text-decoration: none;
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 16px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -60,7 +63,7 @@ nav1 ul1 li1 a2 {
 nav1 ul1 li1 a1 {
   text-decoration: none;
   color: black;
-  font-family: FonteTenali;
+  font-family: Quicksand;
   font-size: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

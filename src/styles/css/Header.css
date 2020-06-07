@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
@@ -15,47 +15,48 @@
 }
 
 @font-face {
-  font-family: "MontBlack";
-  src: url("../fonts/Montserrat-Black.ttf");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
-nav {
+.header {
+  justify-content: center;
+  border-bottom: 0.3em solid transparent;
+  background-image: linear-gradient(#1d976c, #19d7f9), radial-gradient(circle, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.menu {
   display: flex;
-  width: 100%;
-  margin: 0;
-  justify-content: start;
-  padding: 0 auto;
-  color: blue;
+  width: 70vw;
+  height: 12vh;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
+.menu ul {
+  font-size: 2em;
+  display: inline-flex;
+  margin: 5em;
   font-family: Quicksand;
-  font-size: 10px;
 }
 
-nav ul li {
-  padding: 15px;
+.menu ul li {
+  margin: 0 1.5em;
+  list-style: none;
 }
 
-nav ul li a {
+.menu ul li a {
+  color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: navy;
+.menu ul .dollar:hover {
+  color: #3a4c96;
 }
 
-.DarkMode {
-  align-items: center;
-  color: black;
-  background-color: white;
-  font-family: Quicksand;
-}
-
-a {
-  color: black;
-  font-family: Quicksand;
+.menu ul .euro:hover {
+  color: #3a4c96;
 }

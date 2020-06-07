@@ -7,3 +7,7 @@ html, body {
   min-height: 100%;
   overflow: auto;
 }
+
+html {
+  font-size: 62.5%;
+}

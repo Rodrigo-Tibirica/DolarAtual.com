@@ -24,10 +24,10 @@ export default (props) => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/libraatual">Libra</Link>
+                        <Link to="/libraatual">LibraAgora</Link>
                     </li>
                     <li>
-                        <Link to="/bitcoinatual">Bitcoin</Link>
+                        <Link to="/bitcoinatual">BitcoinAgora</Link>
                     </li>
                 </ul>
             </nav>

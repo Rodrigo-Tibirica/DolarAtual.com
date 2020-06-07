@@ -13,9 +13,21 @@ export default (props) => {
                 <ul>
                     <li>
                         <u>
-                            <a href="https://www.google.com/">Innervisions Lab Team.</a>
+                            <a href="https://github.com/Rodrigo-Tibirica/DolarAtual.com">Innervisions Lab Team.</a>
                         </u>
-                        <a> Project developed by Eduardo Gomes, Fabio Ribeiro and Rodrigo Tibiriçá. <br /> </a>
+                        <a> Project developed by </a>
+                        <u> <a href="https://github.com/eduardo-diniz">Eduardo Gomes</a> 
+                        </u>
+                        <a>, </a>
+                        <u>
+                            <a href="https://github.com/fabio-barros">Fábio Barros </a>
+                        </u>
+                        <a>and </a>
+                        <u>
+                            <a href="https://github.com/Rodrigo-Tibirica">Rodrigo Tibiriçá</a>
+                        </u>
+                        <br />
+                        
                         <a>2020 ©️ All right Reversed. Innervisions Lab </a>
                     </li>
                 </ul>

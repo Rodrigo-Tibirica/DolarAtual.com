@@ -7,8 +7,9 @@ import Main from "../../template/Main";
 
 export default (params) => {
 
-    const [cambio, setValor] = useState();
-    const [hora, setHora] = useState();
+    const [cambio, setValor] = useState("");
+    const [data, setData] = useState("");
+    const [hora, setHora] = useState("");
 
     useEffect(() => {
         buscarCambio();
@@ -28,36 +29,39 @@ export default (params) => {
             .catch((error) => {
                 console.log(error);
             });
-        const cambio = parseFloat(dataAPI.GBP.ask).toFixed(2)
-        const hora = dataAPI.GBP.create_date
-
+        const cambio = parseFloat(dataAPI.GBP.ask).toFixed(2);
+        const split = dataAPI.GBP.create_date.split(" ");
+        const aux = split[0].split("-");
+        const data_formatada = aux[2] + "/" + aux[1] + "/" + aux[0];
+        const hora = split[1];
         setValor(cambio);
-        setHora(hora)
+        setData(data_formatada);
+        setHora(hora);
 
     };
 
 
         return ( 
             <div className="Libra">
-                <div className="logo-moeda">
-                    <a href="/" className="logo">
-                        <img src={LogoLibra}></img>
-                    </a>
-                </div>
-
-                <div className="nome-moeda">
-                    <h1>Libra Hoje</h1>
-                </div>
-
-                <div className="valor">
-                    <p> {cambio}</p>
-                </div>
-
-                <div className="atualizado">
-                    <p>Atualizado em: &nbsp; </p>
-                    <p> {hora}</p>
-                </div>
-            </div>
+            <div className="logo-moeda">
+                 <a href="/" className="logo">
+                     <img src={LogoLibra}></img>
+                 </a>
+             </div>
+ 
+             <div className="nome-moeda">
+                 <h1>Euro Hoje</h1>
+             </div>
+ 
+             <div className="valor">
+                 <p className="cifrao">{`R$`}</p>
+                 <p className="cambio"> {`${cambio}`}</p>
+             </div>
+ 
+             <div className="atualizado">
+                 <p>{`Atualizado em: ${data} as ${hora}`}</p>
+             </div>
+         </div>
         
     )
 }

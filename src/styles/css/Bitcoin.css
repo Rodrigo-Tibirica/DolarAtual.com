@@ -16,7 +16,12 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 .Bitcoin {
@@ -39,7 +44,6 @@
 }
 
 .Bitcoin .logo-moeda img {
-  width: 5em;
   height: 5em;
   margin: auto;
 }

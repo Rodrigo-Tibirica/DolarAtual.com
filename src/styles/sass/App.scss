@@ -9,7 +9,7 @@ $aside-width: 10%;
     height: 100vh;
     width: 100%;
     overflow: auto;
-    background: linear-gradient(to bottom right, #1D976C, #19d7f9);
+    background:  linear-gradient(to top,$primary-bg-color,$primary-bg-color3);
     grid-template-columns: $aside-width 1fr $aside-width;
     grid-template-rows: $header-height 1fr $footer-height;
 }
@@ -43,7 +43,7 @@ $aside-width: 10%;
     footer.footer {
         //
         // background: $default-bg-color;
-        border: $default-border;
+        // border: $default-border;
         grid-column: 1/4;
     }
 }

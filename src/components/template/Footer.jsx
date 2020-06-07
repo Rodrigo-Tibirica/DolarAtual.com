@@ -8,7 +8,7 @@ import "../../styles/css/Footer.css";
 //}
 export default (props) => {
     return (
-        <footer className="footernav">
+        <footer className="footer">
            
                 <ul>
                     <li>

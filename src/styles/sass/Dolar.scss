@@ -1,68 +1,83 @@
-$default-bg-color: green;
-$default-border: #33003b 1px solid;
 @import "_Fontes";
 
 .Dolar {
+    // border: grey 2px solid;
     display: grid;
-    height: 100%;
-    //margin-top: 2em;
-    width: 100%;
-    background-color: red;
+    height: 50vh;
+    width: 50vw;
     justify-content: center;
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-family: Quicksand;
-    padding: 15px 15px;
 
     .logo-moeda {
+        // border: grey 2px solid;
         display: flex;
         align-items: center;
         justify-content: center;
         grid-column: 2/4;
         grid-row: 1/2;
+        // margin-top: 10em;
         img {
-            max-width: 120px;
-            max-height: 120px;
-            width: auto;
-            height: auto;
+            
+            width: 5em;
+            height: 5em;
+            margin: auto;
         }
     }
 
     .nome-moeda {
+        //  border: grey 2px solid;
         display: flex;
         justify-content: center;
         grid-row: 2/3;
         grid-column: 2/4;
+        margin-bottom: 2em;
+        h1{
+            font-family: Quicksand;
+            color: #F5F7F6;
+            font-size: 2.5em;
+        }
     }
 
     .valor {
+         border: grey 2px solid;
         display: flex;
-       // border-radius: 100px;
-        //border: grey 2px solid;
-        justify-content: center;
+        border: grey 2px solid;
+        justify-content: space-between;
+        align-items: center;
         grid-row: 3/4;
         grid-column: 2/4;
-
-        p {
-            font-size: 50px;
-            font-family: Quicksand;
+        height: 6em;
+        border: .3em solid transparent;
+        border-radius: 5em;
+        background-image: linear-gradient(#F5F7F6, #F5F7F6),
+        radial-gradient(circle at top left, #fd00da, #19d7f8);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        margin-bottom: 10em;
+        .cifrao{
+            font-size: 2em;
+            color: #58B467;
+            margin-left: 3em;
+        }
+        .cambio{
+            color: #58B467;
+            margin-right: 3.2em;
+            // border: grey 1px solid;           
+            font-size: 5em;
         }
     }
 
     .atualizado {
         display: flex;
-        //border: grey 0px solid;
         justify-content: center;
         grid-column: 2/4;
         grid-row: 4/5;
-
+        margin-bottom: 6em;
         p {
-            font-size: 20px;
-        }
-
-        h2 {
-            font-size: 20px;
+            font-size: 1em;
         }
     }
 }

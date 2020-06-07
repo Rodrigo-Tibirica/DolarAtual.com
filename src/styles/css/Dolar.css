@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mont";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
@@ -15,21 +15,19 @@
 }
 
 @font-face {
-  font-family: "MontBlack";
-  src: url("../fonts/Montserrat-Black.ttf");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 .Dolar {
   display: grid;
-  height: 100%;
-  width: 100%;
-  background-color: red;
+  height: 50vh;
+  width: 50vw;
   justify-content: center;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   font-family: Quicksand;
-  padding: 15px 15px;
 }
 
 .Dolar .logo-moeda {
@@ -41,10 +39,9 @@
 }
 
 .Dolar .logo-moeda img {
-  max-width: 120px;
-  max-height: 120px;
-  width: auto;
-  height: auto;
+  width: 5em;
+  height: 5em;
+  margin: auto;
 }
 
 .Dolar .nome-moeda {
@@ -52,18 +49,42 @@
   justify-content: center;
   grid-row: 2/3;
   grid-column: 2/4;
+  margin-bottom: 2em;
+}
+
+.Dolar .nome-moeda h1 {
+  font-family: Quicksand;
+  color: #F5F7F6;
+  font-size: 2.5em;
 }
 
 .Dolar .valor {
+  border: grey 2px solid;
   display: flex;
-  justify-content: center;
+  border: grey 2px solid;
+  justify-content: space-between;
+  align-items: center;
   grid-row: 3/4;
   grid-column: 2/4;
+  height: 6em;
+  border: .3em solid transparent;
+  border-radius: 5em;
+  background-image: linear-gradient(#F5F7F6, #F5F7F6), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-bottom: 10em;
 }
 
-.Dolar .valor p {
-  font-size: 50px;
-  font-family: Quicksand;
+.Dolar .valor .cifrao {
+  font-size: 2em;
+  color: #58B467;
+  margin-left: 3em;
+}
+
+.Dolar .valor .cambio {
+  color: #58B467;
+  margin-right: 3.2em;
+  font-size: 5em;
 }
 
 .Dolar .atualizado {
@@ -71,12 +92,9 @@
   justify-content: center;
   grid-column: 2/4;
   grid-row: 4/5;
+  margin-bottom: 6em;
 }
 
 .Dolar .atualizado p {
-  font-size: 20px;
-}
-
-.Dolar .atualizado h2 {
-  font-size: 20px;
+  font-size: 1em;
 }

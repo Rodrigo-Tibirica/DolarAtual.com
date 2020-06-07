@@ -6,16 +6,16 @@ import LogoDolar from "../../../assets/dollar.png";
 import Main from "../../template/Main";
 
 export default (params) => {
-
-    const [cambio, setValor] = useState();
-    const [hora, setHora] = useState();
+    const [cambio, setValor] = useState("");
+    const [data, setData] = useState("");
+    const [hora, setHora] = useState("");
 
     useEffect(() => {
         buscarCambio();
-    },[]);   
+    }, []);
 
     const buscarCambio = async () => {
-        const dataAPI =  await axios({
+        const dataAPI = await axios({
             method: "GET",
             url: USD_URL,
         })
@@ -29,9 +29,15 @@ export default (params) => {
                 console.log(error);
             });
 
-        setValor(dataAPI.USD.ask);
-        setHora(dataAPI.USD.create_date)
-
+        const cambio = parseFloat(dataAPI.USD.ask).toFixed(2);
+        const split = dataAPI.USD.create_date.split(" ");
+        const aux = split[0].split("-");
+        const data_formatada = aux[2] + "/" + aux[1] + "/" + aux[0];
+        const hora = split[1];
+        setValor(cambio);
+        setData(data_formatada);
+        setHora(hora);
+        // console.log(dataEHora);
     };
 
     return (
@@ -47,12 +53,12 @@ export default (params) => {
             </div>
 
             <div className="valor">
-                <p> {cambio}</p>
+                <p className="cifrao">{`R$`}</p>
+                <p className="cambio"> {`${cambio}`}</p>
             </div>
 
             <div className="atualizado">
-                <p>Atualizado em: &nbsp; </p>
-                <p> {hora}</p>
+                <p>{`Atualizado em: ${data} as ${hora}`}</p>
             </div>
         </div>
     );

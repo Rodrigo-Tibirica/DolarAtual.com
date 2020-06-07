@@ -1,5 +1,4 @@
-$default-bg-color: white;
-$default-border: #33003b 1px solid;
+@import "_config";
 $header-height: 12%;
 $footer-height: 12%;
 $aside-width: 10%;
@@ -8,41 +7,43 @@ $aside-width: 10%;
     margin: 0;
     display: grid;
     height: 100vh;
+    width: 100%;
     overflow: auto;
-    background: white;
+    background: linear-gradient(to bottom right, #1D976C, #19d7f9);
     grid-template-columns: $aside-width 1fr $aside-width;
     grid-template-rows: $header-height 1fr $footer-height;
 }
 
 .app {
     aside.logo {
-        background: $default-bg-color;
-        border: $default-border;
+        
+        // background: $default-bg-color;
+        // border: $default-border;
+        grid-column: 1/2;
     }
     header.header {
         display: flex;
-        background: $default-bg-color;
-        //border: $default-border;
+        // background: $default-bg-color;
+        // border: $default-border;
         grid-column: 2/4;
-        justify-content: flex-start;
     }
     div.main {
-        background: $default-bg-color;
-        //border: $default-border;
+        // background: $default-bg-color;
+        // border: $default-border;
     }
     aside.right {
-        background: $default-bg-color;
-        //border: $default-border;
+        // background: $default-bg-color;
+        // border: $default-border;
     }
     aside.left {
-        background:white;
-    
-       // border: $default-border;
+        // background: $default-bg-color;
+
+        // border: $default-border;
     }
     footer.footer {
-        // 
-        background-color: $default-bg-color;
-      //  border: $default-border;
+        //
+        // background: $default-bg-color;
+        border: $default-border;
         grid-column: 1/4;
     }
 }

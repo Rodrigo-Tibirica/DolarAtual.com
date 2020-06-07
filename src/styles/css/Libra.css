@@ -24,7 +24,7 @@
   display: grid;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

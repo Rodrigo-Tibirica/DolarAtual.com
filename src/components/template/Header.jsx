@@ -24,7 +24,10 @@ export default (props) => {
                         </Link>
                     </li>
                     <li>
-                        <a href="">Dólar Jamaicano</a>
+                        <Link to="/libraatual">Libra</Link>
+                    </li>
+                    <li>
+                        <Link to="/bitcoinatual">Bitcoin</Link>
                     </li>
                 </ul>
             </nav>

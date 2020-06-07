@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/Montserrat-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Variable.ttf");
+  }
+  
+  /* No CSS */
+  @font-face {
+    font-family: "FonteTenali";
+    src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "MontBlack";
+    src: url("../fonts/Montserrat-Black.ttf");
+  }
+  
+  .Bitcoin {
+    display: grid;
+    height: 50vh;
+    width: 50v;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Quicksand;
+    padding: 15px 15px;
+  }
+  
+  .Bitcoin .logo-moeda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  
+  .Bitcoin .logo-moeda img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+  }
+  
+  .Bitcoin .nome-moeda {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+  
+  .Bitcoin .valor {
+    display: flex;
+    border-radius: 100px;
+    border: white 2px solid;
+    justify-content: center;
+    grid-row: 3/4;
+    grid-column: 2/4;
+  }
+  
+  .Bitcoin .valor p {
+    font-size: 50px;
+    font-family: Quicksand;
+  }
+  
+  .Bitcoin .atualizado {
+    display: flex;
+    border: white 2px solid;
+    justify-content: center;
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  
+  .Bitcoin .atualizado p {
+    font-size: 20px;
+    font-family: Quicksand;
+  }
+  
+  .Bitcoin .atualizado h2 {
+    font-size: 20px;
+    font-family: Quicksand;
+  }
+  

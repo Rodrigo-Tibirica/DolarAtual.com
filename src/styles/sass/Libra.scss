@@ -1,0 +1,68 @@
+$default-bg-color: green;
+$default-border: #33003b 1px solid;
+@import "_Fontes";
+
+.Libra {
+    display: grid;
+    height: 100%;
+    //margin-top: 2em;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Quicksand;
+    padding: 15px 15px;
+
+    .logo-moeda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        img {
+            max-width: 120px;
+            max-height: 120px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .nome-moeda {
+        display: flex;
+        justify-content: center;
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+
+    .valor {
+        display: flex;
+       // border-radius: 100px;
+        //border: grey 2px solid;
+        justify-content: center;
+        grid-row: 3/4;
+        grid-column: 2/4;
+
+        p {
+            font-size: 50px;
+            font-family: Quicksand;
+        }
+    }
+
+    .atualizado {
+        display: flex;
+        //border: grey 0px solid;
+        justify-content: center;
+        grid-column: 2/4;
+        grid-row: 4/5;
+
+        p {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}

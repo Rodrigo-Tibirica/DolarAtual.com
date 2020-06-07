@@ -17,7 +17,7 @@ export default (props) => {
                         <Link to="/euroatual">EuroAgora</Link>
                     </li>
                     <li>
-                        <a href="">Dolar Jamaicano</a>
+                        <Link to="/libraatual">Libra</Link>
                     </li>
                 </ul>
             </nav>

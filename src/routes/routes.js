@@ -14,7 +14,6 @@ export default function Routes() {
             <Route path="/euroatual" exact component={Euro}></Route>
             <Route path="/libraatual" exact component={Libra}></Route>
             <Route path="/bitcoinatual" exact component={Bitcoin}></Route>
-
             <Redirect from="*" to="/" />
         </Switch>
     );

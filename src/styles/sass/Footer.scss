@@ -1,29 +1,26 @@
-/* No CSS */
-
 @import "_Fontes";
+@import "_config";
+.footer {
+    display: flex;
+    background: #29313a;
+    height: 100%;
+    font-family: Montserrat;
+    ul {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: inline-flex;
+        list-style: none;
+        li {
+            padding: 30px;
+            a {
+                // text-decoration: none;
+                color: #d8dde4;
+                font-family: Quicksand;
+                font-size: 1.2em;
+            }
+            
+        }
 
-.footernav {
-  display: flex;
-  // background-color: white;
-  // width: 100vw;
-  // height: 100%;
-  margin: 0;
-  font-family: Montserrat;
-  justify-content: center;
-  ul {
-    display: inline-flex;
-    list-style-type: none;
-
-    li {
-      padding: 15px;
-      a {
-        text-decoration: none;
-        color: black;
-        font-family: Quicksand;
-        font-size: 16px;
-        justify-content: center;  
-
-      }
     }
-  }
 }

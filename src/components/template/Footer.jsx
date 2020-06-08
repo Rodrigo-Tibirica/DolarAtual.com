@@ -1,38 +1,41 @@
-import React from 'react';
+import React from "react";
 import "../../styles/css/Footer.css";
 //export default props =>{
 
 //return(<footer className="footer">Footer</footer>)
 
-
 //}
 export default (props) => {
     return (
         <footer className="footer">
-           
-                <ul>
-                    <li>
-                        <u>
-                            <a href="https://github.com/Rodrigo-Tibirica/DolarAtual.com">Innervisions Lab Team.</a>
-                        </u>
-                        <a> Project developed by </a>
-                        <u> <a href="https://github.com/eduardo-diniz">Eduardo Gomes</a> 
-                        </u>
-                        <a>, </a>
-                        <u>
-                            <a href="https://github.com/fabio-barros">Fábio Barros </a>
-                        </u>
-                        <a>and </a>
-                        <u>
-                            <a href="https://github.com/Rodrigo-Tibirica">Rodrigo Tibiriçá</a>
-                        </u>
-                        <br />
-                        
-                        <a>2020 ©️ All right Reversed. Innervisions Lab </a>
-                    </li>
-                </ul>
-            
+            <ul>
+                <li>
+                    <a
+                        className="nome"
+                        href="http://innervisionslab.github.io/"
+                    >
+                        {`©️ 2020, Innervisions Lab.`}
+                    </a>
+                </li>
+
+                <li>
+                    <a> Projeto em desenvolvimento por </a>
+                    <a href="https://github.com/eduardo-diniz">
+                        {`Eduardo Gomes`}
+                    </a>
+                    <a>, </a>
+                    <a href="https://github.com/fabio-barros">
+                        {`Fábio Barros`}
+                    </a>
+                    <a> e </a>
+                    <a
+                        className="nome"
+                        href="https://github.com/Rodrigo-Tibirica"
+                    >
+                        {`Rodrigo Tibiriçá`}
+                    </a>
+                </li>
+            </ul>
         </footer>
     );
 };
-

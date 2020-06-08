@@ -8,24 +8,29 @@ $aside-width: 10%;
     display: grid;
     height: 100vh;
     width: 100%;
-    overflow: auto;
-    background:  linear-gradient(to top,$primary-bg-color,$primary-bg-color3);
+    overflow: hidden;
+    
+    // background-image: 
+    // linear-gradient(-140deg, red 50%, transparent 40%),
+    // linear-gradient(-40deg, #363449 50%, transparent 10%),
+    // linear-gradient(165deg, #2931 50%, transparent 20%),
+    // linear-gradient(30deg, #29313a 60%, transparent 40%);
+        background-color: #E6E9ED;
     grid-template-columns: $aside-width 1fr $aside-width;
     grid-template-rows: $header-height 1fr $footer-height;
 }
 
 .app {
-    aside.logo {
-        
-        // background: $default-bg-color;
-        // border: $default-border;
-        grid-column: 1/2;
-    }
+    // aside.logo {
+    //     // background: $default-bg-color;
+    //     // border: $default-border;
+    //     grid-column: 1/2;
+    // }
     header.header {
         display: flex;
         // background: $default-bg-color;
         // border: $default-border;
-        grid-column: 2/4;
+        grid-column: 1/4;
     }
     div.main {
         // background: $default-bg-color;

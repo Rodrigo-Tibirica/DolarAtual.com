@@ -3,19 +3,15 @@
   display: grid;
   height: 100vh;
   width: 100%;
-  overflow: auto;
-  background: linear-gradient(to top, #42455a, #4B384C);
+  overflow: hidden;
+  background-color: #E6E9ED;
   grid-template-columns: 10% 1fr 10%;
   grid-template-rows: 12% 1fr 12%;
 }
 
-.app aside.logo {
-  grid-column: 1/2;
-}
-
 .app header.header {
   display: flex;
-  grid-column: 2/4;
+  grid-column: 1/4;
 }
 
 .app footer.footer {

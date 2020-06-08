@@ -13,7 +13,7 @@ export default (props) => {
     return (
         <BrowserRouter> 
         <div className="app">
-            <Logo/>
+            {/* <Logo/> */}
             <Header />
             <SideBarLeft />
             <Main />

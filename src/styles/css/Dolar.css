@@ -32,7 +32,7 @@
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: Quicksand;
+  font-family: Mont;
 }
 
 .Dolar .logo-moeda {
@@ -58,39 +58,27 @@
 }
 
 .Dolar .nome-moeda h1 {
-  font-family: OpenSans;
-  color: #f5f7f6;
-  font-size: 2.5em;
+  font-family: Mont;
+  color: #29313a;
+  font-size: 5em;
 }
 
 .Dolar .valor {
-  border: grey 2px solid;
   display: flex;
-  border: grey 2px solid;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   grid-row: 3/4;
   grid-column: 2/4;
-  height: 6em;
-  border: 0.3em solid transparent;
-  border-radius: 5em;
-  background-image: linear-gradient(#f5f7f6, #f5f7f6), radial-gradient(circle at top left, #fd00da, #19d7f8);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  margin-bottom: 10em;
 }
 
 .Dolar .valor .cifrao {
-  font-size: 2em;
+  font-size: 5em;
   color: #58b467;
-  margin-left: 3em;
 }
 
 .Dolar .valor .cambio {
-  font-family: OpenSans;
-  color: #0d171a;
-  margin-right: 3.2em;
-  font-size: 5em;
+  color: #58B467;
+  font-size: 15em;
 }
 
 .Dolar .atualizado {
@@ -98,10 +86,8 @@
   justify-content: center;
   grid-column: 2/4;
   grid-row: 4/5;
-  margin-bottom: 6em;
 }
 
 .Dolar .atualizado p {
-  color: white;
   font-size: 1em;
 }

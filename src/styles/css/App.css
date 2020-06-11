@@ -1,19 +1,5 @@
 .app {
-  margin: 0;
-  display: grid;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  margin: auto;
+  width: 90%;
   background-color: #E6E9ED;
-  grid-template-columns: 10% 1fr 10%;
-  grid-template-rows: 12% 1fr 12%;
-}
-
-.app header.header {
-  display: flex;
-  grid-column: 1/4;
-}
-
-.app footer.footer {
-  grid-column: 1/4;
 }

@@ -42,23 +42,27 @@ export default (params) => {
 
     return (
         <div className="Dolar">
-            <div className="logo-moeda">
-                <a href="/" className="logo">
-                    <img src={LogoDolar}></img>
-                </a>
+            {/* <div className="logo-moeda"> */}
+            {/* <a href="/" className="logo"> */}
+            {/* <img src={LogoDolar}></img> */}
+            {/* </a> */}
+            {/* </div> */}
+
+            <div className="valor-comercial">
+                <span className="titulo">Dólar Comercial</span>
+                <span className="cambio"> {`R$ ${cambio}`}</span>
+                <p>
+                    Usado em transações com exportação/importação entre bancos,
+                    instituições financeiras e empresas.
+                </p>
             </div>
 
-            <div className="nome-moeda">
-                <h1>Dólar Hoje</h1>
-            </div>
-
-            <div className="valor">
-                <p className="cifrao">{`R$`}</p>
-                <p className="cambio"> {`${cambio}`}</p>
-            </div>
-
-            <div className="atualizado">
-                <p>{`Atualizado em: ${data} as ${hora}`}</p>
+            <div className="valor-turismo">
+                <span className="titulo">{`Dólar Turismo`}</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, nostrum?
+                </p>
             </div>
         </div>
     );

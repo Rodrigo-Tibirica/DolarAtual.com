@@ -10,15 +10,18 @@ export default (props) => {
         <footer className="footer">
             <ul>
                 <li>
+                    <a href=""> Termos | Privacidade</a>
+                </li>
+                <li>
                     <a
-                        className="nome"
+                        className="copyright"
                         href="http://innervisionslab.github.io/"
                     >
                         {`©️ 2020, Innervisions Lab.`}
                     </a>
                 </li>
 
-                <li>
+                {/* <li>
                     <a> Projeto em desenvolvimento por </a>
                     <a href="https://github.com/eduardo-diniz">
                         {`Eduardo Gomes`}
@@ -34,7 +37,7 @@ export default (props) => {
                     >
                         {`Rodrigo Tibiriçá`}
                     </a>
-                </li>
+                </li> */}
             </ul>
         </footer>
     );

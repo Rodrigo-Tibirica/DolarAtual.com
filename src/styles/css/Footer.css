@@ -26,15 +26,15 @@
 
 .footer {
   display: flex;
+  justify-content: center;
   background: #29313a;
   height: 100%;
-  font-family: Montserrat;
+  font-family: OpenSans;
 }
 
 .footer ul {
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
-  align-items: center;
   display: inline-flex;
   list-style: none;
 }
@@ -45,6 +45,5 @@
 
 .footer ul li a {
   color: #d8dde4;
-  font-family: Quicksand;
-  font-size: 1.2em;
+  font-size: .8rem;
 }

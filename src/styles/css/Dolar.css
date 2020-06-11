@@ -1,93 +1,54 @@
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Montserrat-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("../fonts/Quicksand-Variable.ttf");
-}
-
-/* No CSS */
-@font-face {
-  font-family: "FonteTenali";
-  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/RobotoCondensed-Regular.ttf");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Regular.ttf");
-}
-
 .Dolar {
-  display: grid;
-  height: 50vh;
-  width: 50vw;
-  justify-content: center;
-  align-items: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: Mont;
-}
-
-.Dolar .logo-moeda {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 2/4;
-  grid-row: 1/2;
+  justify-content: space-around;
 }
 
-.Dolar .logo-moeda img {
-  width: 5em;
-  height: 5em;
-  margin: auto;
+.Dolar .valor-comercial {
+  width: 45%;
 }
 
-.Dolar .nome-moeda {
+.Dolar .valor-turismo {
+  width: 45%;
+}
+
+.Dolar .valor-comercial,
+.Dolar .valor-turismo {
   display: flex;
-  justify-content: center;
-  grid-row: 2/3;
-  grid-column: 2/4;
-  margin-bottom: 2em;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3.5em 2.5em;
+  background-color: #edf1ff;
+  border: 0.2em solid;
+  border-image: linear-gradient(#b60017, rgba(0, 0, 0, 0)) 1 100%;
 }
 
-.Dolar .nome-moeda h1 {
-  font-family: Mont;
-  color: #29313a;
-  font-size: 5em;
+.Dolar .valor-comercial .titulo,
+.Dolar .valor-turismo .titulo {
+  font-size: 2.2rem;
 }
 
-.Dolar .valor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-row: 3/4;
-  grid-column: 2/4;
-}
-
-.Dolar .valor .cifrao {
-  font-size: 5em;
+.Dolar .valor-comercial .cambio,
+.Dolar .valor-turismo .cambio {
   color: #58b467;
+  font-size: 3.5rem;
 }
 
-.Dolar .valor .cambio {
-  color: #58B467;
-  font-size: 15em;
+.Dolar .valor-comercial p,
+.Dolar .valor-turismo p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.7rem;
 }
 
-.Dolar .atualizado {
-  display: flex;
-  justify-content: center;
-  grid-column: 2/4;
-  grid-row: 4/5;
-}
-
-.Dolar .atualizado p {
-  font-size: 1em;
+@media (max-width: 800px) {
+  .Dolar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .Dolar .valor-comercial {
+    width: 50%;
+  }
+  .Dolar .valor-turismo {
+    width: 50%;
+  }
 }

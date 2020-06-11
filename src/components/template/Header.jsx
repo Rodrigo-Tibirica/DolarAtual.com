@@ -1,36 +1,31 @@
 import React from "react";
 import "../../styles/css/Header.css";
-
-import Router from "../../routes/routes";
-import Dolar from "../pages/dolar/Dolar";
-import Euro from "../pages/euro/Euro";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/exchange.png";
 export default (props) => {
     return (
-        <header className="header">
-            <nav className="menu">
+        <header className="header-container">
+            <nav className="header">
+                <Link to="/">
+                    <span className="logo1">dolarhoje</span>
+                    <span className="logo2">.today</span>
+                </Link>
+
                 <ul>
                     {/* <li className="logo"><img src={Logo} alt=""/></li> */}
                     <li>
-                        <Link to="/dolaratual">
-                            <a className="dollar">
-                                <span>Dólar </span>
-                            </a>
-                        </Link>
+                        <Link to="/dolarahoje">Dólar</Link>
                     </li>
                     <li>
-                        <Link to="/euroatual" className="euro">
-                            Euro
-                        </Link>
+                        <Link to="/euroahoje">Euro</Link>
                     </li>
                     <li>
-                        <Link to="/libraatual">Libra </Link>
+                        <Link to="/libraahoje">Libra </Link>
                     </li>
                     <li>
-                        <Link to="/bitcoinatual">Bitcoin </Link>
+                        <Link to="/bitcoinahoje">Bitcoin </Link>
                     </li>
                 </ul>
+                <a href="">Sobre</a>
             </nav>
         </header>
     );

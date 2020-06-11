@@ -4,51 +4,41 @@ $footer-height: 12%;
 $aside-width: 10%;
 
 .app {
-    margin: 0;
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    
-    // background-image: 
-    // linear-gradient(-140deg, red 50%, transparent 40%),
-    // linear-gradient(-40deg, #363449 50%, transparent 10%),
-    // linear-gradient(165deg, #2931 50%, transparent 20%),
-    // linear-gradient(30deg, #29313a 60%, transparent 40%);
-        background-color: #E6E9ED;
-    grid-template-columns: $aside-width 1fr $aside-width;
-    grid-template-rows: $header-height 1fr $footer-height;
+
+    margin: auto;
+    // display: grid;
+    // height: 100vh;
+    width: 90%;
+    // max-width: 1600px;
+    // overflow: hidden;
+    background-color: #E6E9ED;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: $header-height 1fr $footer-height;
 }
 
-.app {
-    // aside.logo {
-    //     // background: $default-bg-color;
-    //     // border: $default-border;
-    //     grid-column: 1/2;
-    // }
-    header.header {
-        display: flex;
-        // background: $default-bg-color;
-        // border: $default-border;
-        grid-column: 1/4;
-    }
-    div.main {
-        // background: $default-bg-color;
-        // border: $default-border;
-    }
-    aside.right {
-        // background: $default-bg-color;
-        // border: $default-border;
-    }
-    aside.left {
-        // background: $default-bg-color;
+// .app {
+//     nav.menu {
+//         // background: $default-bg-color;
+//         // border: $default-border;
+//         grid-column: 1/4;
+//     }
+//     div.main {
+//         // background: $default-bg-color;
+//         // border: $default-border;
+//     }
+//     aside.right {
+//         // background: $default-bg-color;
+//         // border: $default-border;
+//     }
+//     aside.left {
+//         // background: $default-bg-color;
 
-        // border: $default-border;
-    }
-    footer.footer {
-        //
-        // background: $default-bg-color;
-        // border: $default-border;
-        grid-column: 1/4;
-    }
-}
+//         // border: $default-border;
+//     }
+//     footer.footer {
+//         //
+//         // background: $default-bg-color;
+//         // border: $default-border;
+//         grid-column: 1/4;
+//     }
+// }

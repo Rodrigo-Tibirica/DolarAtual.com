@@ -24,42 +24,36 @@
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+.header-container {
+  border-bottom: 0.15rem solid;
+  border-image: radial-gradient(ellipse, #e6e9ed, #53b86a) 1;
+}
+
 .header {
-  justify-content: space-evenly;
-  border-bottom: 0.3em solid transparent;
-  background-image: linear-gradient(#201f2b, #29313a), radial-gradient(circle, #19d7f8, #19d7f8);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.menu {
   display: flex;
-  width: 70vw;
-  height: 12vh;
+  width: 90%;
+  margin: auto;
   align-items: center;
-  justify-content: center;
-}
-
-.menu ul {
-  font-size: 2em;
-  display: inline-flex;
   font-family: Quicksand;
+  padding: 0 3em;
+  height: 3.8em;
+  justify-content: space-between;
 }
 
-.menu ul li {
-  margin: 0 1.5em;
-  list-style: none;
+.header ul {
+  display: flex;
 }
 
-.menu ul li a {
-  color: white;
-  text-decoration: none;
+.header ul li {
+  padding: 0 2em;
 }
 
-.menu ul .dollar:hover {
-  color: #3a4c96;
+.header ul li a {
+  font-size: 1.25rem;
+  color: #232b2b;
 }
 
-.menu ul .euro:hover {
-  color: #3a4c96;
+.header ul li a:hover, .header ul li a:focus {
+  color: #53b86a;
+  border-bottom: 0.1rem solid #53b86a;
 }

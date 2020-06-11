@@ -1,25 +1,28 @@
 import React from "react";
 import "../styles/css/App.css";
 
-import Logo from "../components/template/Logo";
 import Header from "../components/template/Header";
-import SideBarLeft from "../components/template/SideBarLeft";
-import SideBarRight from "../components/template/SideBarRight";
 import Main from "../components/template/Main";
+import Conversor from "../components/template/Conversor";
+import Grafico from "../components/template/Grafico";
+import MoedasAtuais from "../components/template/MoedasAtuais";
 import Footer from "../components/template/Footer";
-import {BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 export default (props) => {
     return (
-        <BrowserRouter> 
-        <div className="app">
-            {/* <Logo/> */}
+        <BrowserRouter>
             <Header />
-            <SideBarLeft />
-            <Main />
-            <SideBarRight/>
-            <Footer />
-        </div>
+            <div className="app">
+                <div className="main-wrapper">
+
+                <Main />
+                </div>
+                <Conversor />
+                {/* <Grafico /> */}
+                {/* <MoedasAtuais /> */}
+            </div>
+                <Footer />
         </BrowserRouter>
     );
 };

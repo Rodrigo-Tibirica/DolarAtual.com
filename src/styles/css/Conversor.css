@@ -1,0 +1,22 @@
+.conversor-container {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11em;
+  border: 0.1em yellow solid;
+}
+
+.conversor-container .Conversor {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+.conversor-container .Conversor .conversor-origem {
+  border: 0.1em brown solid;
+}
+
+.conversor-container .Conversor .conversor-destino {
+  border: 0.1em brown solid;
+}

@@ -1,5 +1,51 @@
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
+/* No CSS */
+@font-face {
+  font-family: "FonteTenali";
+  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1em;
+  display: grid;
+  justify-items: center;
+  padding: 3em 2em;
+  gap: 1em;
+  font-family: Quicksand;
+  background: #243a5e;
+  color: #232b2b;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main .Grafico {
+  background-color: #edf1ff;
+  border: 0.2em #232b2b;
+  border-style: dashed;
+  padding: 1em;
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 3em 0em;
+  }
 }

@@ -1,0 +1,20 @@
+.conversor-container {
+    margin-top: 5em;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11em;
+    // padding: 2em 3em;
+    border: 0.1em yellow solid;
+    .Conversor {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        .conversor-origem {
+            border: 0.1em brown solid;
+        }
+        .conversor-destino {
+            border: 0.1em brown solid;
+        }
+    }
+}

@@ -2,13 +2,13 @@
 @import "_config";
 .footer {
     display: flex;
+    justify-content: center;
     background: #29313a;
     height: 100%;
-    font-family: Montserrat;
+    font-family: OpenSans;
     ul {
-        width: 100%;
+        width: 90%;
         justify-content: space-between;
-        align-items: center;
         display: inline-flex;
         list-style: none;
         li {
@@ -16,8 +16,8 @@
             a {
                 // text-decoration: none;
                 color: #d8dde4;
-                font-family: Quicksand;
-                font-size: 1.2em;
+                // font-family: Quicksand;
+                font-size: .8rem;
             }
             
         }

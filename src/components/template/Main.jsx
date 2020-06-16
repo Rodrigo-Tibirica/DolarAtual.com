@@ -10,8 +10,8 @@ export default (props) => {
     return (
             
             <div className="main">
-                <Router />
-                <Grafico />
+                <Conversor />
+                {/* <Grafico /> */}
             </div>
             
     

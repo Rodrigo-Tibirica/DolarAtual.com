@@ -4,28 +4,38 @@ import { Link } from "react-router-dom";
 export default (props) => {
     return (
         <header className="header-container">
+            
+            <div
+                className="menu-btn"
+                onClick={(e) =>
+                    document
+                        .querySelector(".header-menu")
+                        .classList.toggle("show")
+                }
+            >
+                <i className="fas fa-bars"></i>
+            </div> 
             <nav className="header">
-                <Link to="/">
+                <Link to="/" className="Logo">
                     <span className="logo1">dolarhoje</span>
                     <span className="logo2">.today</span>
                 </Link>
 
-                <ul>
-                    {/* <li className="logo"><img src={Logo} alt=""/></li> */}
+                <ul className="header-menu">
                     <li>
-                        <Link to="/dolarahoje">Dólar</Link>
+                        <Link to="/dolarhoje">Dólar</Link>
                     </li>
                     <li>
-                        <Link to="/euroahoje">Euro</Link>
+                        <Link to="/eurohoje">Euro</Link>
                     </li>
                     <li>
-                        <Link to="/libraahoje">Libra </Link>
+                        <Link to="/librahoje">Libra </Link>
                     </li>
                     <li>
-                        <Link to="/bitcoinahoje">Bitcoin </Link>
+                        <Link to="/bitcoinhoje">Bitcoin </Link>
                     </li>
                 </ul>
-                <a href="">Sobre</a>
+                <a href="" className="Sobre">Sobre</a>
             </nav>
         </header>
     );

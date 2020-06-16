@@ -75,9 +75,11 @@
 
 .Dolar {
     display: flex;
+    width: 100%;
+    // height: 100;
     // padding: 0.5em;
     justify-content: space-around;
-    // border: 0.1em green solid;
+    border: 0.1em green solid;
 
     .valor-comercial {
         width: 45%;
@@ -115,18 +117,21 @@
 
 @media (max-width: 800px) {
     .Dolar {
+
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1em;
+        height: 100%;
+        padding: 0;
+
         .valor-comercial {
-            width: 50%;
+            height: 45%;
+            width: 70%;
         }
         .valor-turismo {
-            width: 50%;
+            height: 45%;
+            width: 70%;
         }
-        .valor-comercial,
-    .valor-turismo { 
-        
-    }
     }
 }

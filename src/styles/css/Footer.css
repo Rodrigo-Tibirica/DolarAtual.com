@@ -1,6 +1,16 @@
 @font-face {
   font-family: "Mont";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Medium";
   src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
@@ -25,10 +35,11 @@
 }
 
 .footer {
+  margin-top: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: #29313a;
-  height: 100%;
   font-family: OpenSans;
 }
 

@@ -17,7 +17,7 @@ export default (props) => {
                         className="copyright"
                         href="http://innervisionslab.github.io/"
                     >
-                        {`©️ 2020, Innervisions Lab.`}
+                        &copy;{` 2020, Innervisions Lab.`}
                     </a>
                 </li>
 

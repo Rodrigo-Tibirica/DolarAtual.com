@@ -1,22 +1,135 @@
-.conversor-container {
-  margin-top: 5em;
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Variable.ttf");
+}
+
+/* No CSS */
+@font-face {
+  font-family: "FonteTenali";
+  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+.Conversor {
+  width: 100em;
+  margin: 10em;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 11em;
-  border: 0.1em yellow solid;
+  height: 16em;
+  font-family: Mont;
 }
 
-.conversor-container .Conversor {
+.Conversor .conversor-origem,
+.Conversor .conversor-destino {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5em;
+  background: #edf1ff;
   height: 100%;
-  width: 50%;
+  width: 32em;
 }
 
-.conversor-container .Conversor .conversor-origem {
-  border: 0.1em brown solid;
+.Conversor .conversor-origem .flag-container,
+.Conversor .conversor-destino .flag-container {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+  padding: 1em;
 }
 
-.conversor-container .Conversor .conversor-destino {
-  border: 0.1em brown solid;
+.Conversor .conversor-origem .flag-container .flag,
+.Conversor .conversor-destino .flag-container .flag {
+  width: 3em;
+  height: 3em;
+  margin-left: 2.5em;
+}
+
+.Conversor .conversor-origem .flag-container .moeda,
+.Conversor .conversor-destino .flag-container .moeda {
+  color: #000;
+  margin-left: 0.5em;
+  font-size: 1.2rem;
+}
+
+.Conversor .conversor-origem .input-container,
+.Conversor .conversor-destino .input-container {
+  display: flex;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  justify-content: flex-start;
+}
+
+.Conversor .conversor-origem .input-container p,
+.Conversor .conversor-destino .input-container p {
+  margin-left: 3.3em;
+  margin-right: 1em;
+}
+
+.Conversor .conversor-origem .input-container p .cifrao,
+.Conversor .conversor-destino .input-container p .cifrao {
+  font-size: 3rem;
+  color: #000;
+  font-family: Mont-Regular;
+}
+
+.Conversor .conversor-origem .input-container input,
+.Conversor .conversor-destino .input-container input {
+  font-family: Mont-Regular;
+  width: 5.9em;
+  background: #edf1ff;
+  border: none;
+  border-bottom: 0.04em #ccc solid;
+  font-size: 3rem;
+}
+
+.Conversor .conversor-origem .input-container input:focus, .Conversor .conversor-origem .input-container input:focus,
+.Conversor .conversor-destino .input-container input:focus,
+.Conversor .conversor-destino .input-container input:focus {
+  outline: none;
+}
+
+.Conversor .conversor-origem .input-container input::-webkit-outer-spin-button, .Conversor .conversor-origem .input-container input::-webkit-inner-spin-button,
+.Conversor .conversor-destino .input-container input::-webkit-outer-spin-button,
+.Conversor .conversor-destino .input-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.Conversor .conversor-destino {
+  background: #f4f9ff;
+  border-left: 0.1em #243A5E solid;
+}
+
+.Conversor .conversor-destino .input-container input {
+  background: #f4f9ff;
+}
+
+@media (max-width: 860px) {
+  .Conversor {
+    flex-direction: column;
+  }
 }

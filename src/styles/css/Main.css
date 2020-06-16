@@ -1,6 +1,16 @@
 @font-face {
   font-family: "Mont";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Medium";
   src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
@@ -25,26 +35,21 @@
 }
 
 .main {
-  margin-top: 1em;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
   display: grid;
   justify-items: center;
-  padding: 3em 2em;
-  gap: 1em;
   font-family: Quicksand;
-  background: #243a5e;
+  background: #A6BE47;
   color: #232b2b;
-  grid-template-columns: 1fr 1fr;
-}
-
-.main .Grafico {
-  background-color: #edf1ff;
-  border: 0.2em #232b2b;
-  border-style: dashed;
-  padding: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 @media (max-width: 800px) {
   .main {
+    width: 100%;
     grid-template-columns: 1fr;
     padding: 3em 0em;
   }

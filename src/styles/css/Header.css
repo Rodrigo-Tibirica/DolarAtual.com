@@ -1,6 +1,16 @@
 @font-face {
   font-family: "Mont";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Medium";
   src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Mont-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
@@ -40,20 +50,75 @@
   justify-content: space-between;
 }
 
-.header ul {
+.header .header-menu {
   display: flex;
 }
 
-.header ul li {
+.header .header-menu li {
   padding: 0 2em;
 }
 
-.header ul li a {
+.header .header-menu li a {
   font-size: 1.25rem;
   color: #232b2b;
 }
 
-.header ul li a:hover, .header ul li a:focus {
+.header .header-menu li a:hover, .header .header-menu li a:focus {
   color: #53b86a;
   border-bottom: 0.1rem solid #53b86a;
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 1em;
+  left: 1em;
+  z-index: 2;
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .header {
+    height: 3em;
+    width: 100%;
+    padding: 0;
+  }
+  .header .Logo {
+    padding-left: 2.7em;
+    margin: auto;
+  }
+  .header .Sobre {
+    padding-right: 1em;
+    font-size: 0.8rem;
+  }
+  .header .header-menu {
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    background: #e6e9ed;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50em);
+    transition: transform 0.5s ease-in-out;
+    border-right: #ccc 0.1em solid;
+    opacity: 0.9;
+    padding: 2em;
+  }
+  .header .header-menu li {
+    padding: 1em;
+    border-bottom: 0.1em #ccc solid;
+  }
+  .header .header-menu li:last-child {
+    border-bottom: 0;
+  }
+  .header .header-menu.show {
+    transform: translateX(-0.5em);
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
 }

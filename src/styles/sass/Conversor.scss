@@ -1,20 +1,85 @@
-.conversor-container {
-    margin-top: 5em;;
+@import "_Fontes";
+.Conversor {
+    width: 100em;
+    margin: 10em;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 11em;
-    // padding: 2em 3em;
-    border: 0.1em yellow solid;
-    .Conversor {
+    height: 16em;
+    font-family: Mont;
+    .conversor-origem,
+    .conversor-destino {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.5em;
+        background: #edf1ff;
         height: 100%;
-        width: 50%;
-        .conversor-origem {
-            border: 0.1em brown solid;
+        width: 32em; 
+        .flag-container {
+            display: flex;
+            margin-bottom: 1em;
+            align-items: center;
+            padding: 1em;
+            .flag {
+                width: 3em;
+                height: 3em;
+                margin-left: 2.5em;
+            }
+
+            .moeda {
+                color: #000;
+                margin-left: 0.5em;
+                font-size: 1.2rem;
+            }
         }
-        .conversor-destino {
-            border: 0.1em brown solid;
+
+        .input-container {
+            display: flex;
+            margin-right: 1em;
+            margin-bottom: 2em;
+            justify-content: flex-start;
+            p {
+                margin-left: 3.3em;
+                margin-right: 1em;
+
+                .cifrao {
+                    font-size: 3rem;
+                    color: #000;
+                    font-family: Mont-Regular;
+                }
+            }
+            input {
+                font-family: Mont-Regular;
+                width: 5.9em;
+                background: #edf1ff;
+                border: none;
+                border-bottom: 0.04em #ccc solid;
+                // height:1em;
+                font-size: 3rem;
+                &:focus,
+                &:focus {
+                    outline: none;
+                }
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+            }
         }
+    }
+    .conversor-destino {
+        background: #f4f9ff;
+        border-left: 0.1em #243A5E solid;
+        .input-container {
+            input {
+                background: #f4f9ff;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .Conversor {
+        flex-direction: column;
     }
 }

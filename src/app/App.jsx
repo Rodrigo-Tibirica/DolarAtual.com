@@ -14,12 +14,9 @@ export default (props) => {
         <BrowserRouter>
             <Header />
             <div className="app">
-                <div className="main-wrapper">
-
                 <Main />
-                </div>
-                <Conversor />
-                {/* <Grafico /> */}
+                {/* <Conversor /> */}
+                <Grafico />
                 {/* <MoedasAtuais /> */}
             </div>
                 <Footer />

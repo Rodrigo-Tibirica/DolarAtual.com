@@ -82,6 +82,7 @@
 .header-container {
     border-bottom: 0.15rem solid;
     border-image: radial-gradient(ellipse, #e6e9ed, #53b86a) 1;
+    // background: #EDF1FF;
 }
 
 .header {
@@ -93,8 +94,9 @@
     padding: 0 3em;
     height: 3.8em;
     justify-content: space-between;
+    // background-color: #EDF1FF;
 
-    ul {
+    .header-menu {
         display: flex;
         // flex: .3;
 
@@ -113,6 +115,66 @@
                     border-bottom: 0.1rem solid #53b86a;
                 }
             }
+        }
+    }
+}
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 1em;
+    left: 1em;
+    z-index: 2;
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .header {
+        height: 3em;
+        width: 100%;
+        padding: 0;
+        .Logo {
+            padding-left: 2.7em;
+            margin: auto;
+        }
+        .Sobre {
+            padding-right: 1em;
+            font-size: 0.8rem;
+        }
+
+        .header-menu {
+            display: block;
+            position: absolute;
+            top: 3em;
+            left: 0;
+            background: #e6e9ed;
+            width: 50%;
+            height: 100%;
+            transform: translateX(-50em);
+            transition: transform 0.5s ease-in-out;
+            border-right: #ccc 0.1em solid;
+            opacity: 0.9;
+            padding: 2em;
+
+            li {
+                padding: 1em;
+                border-bottom: 0.1em #ccc solid;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        .header-menu.show {
+            transform: translateX(-0.5em);
+        }
+    }
+
+    .menu-btn {
+        display: block;
+
+        &:hover {
+            opacity: 0.5;
         }
     }
 }

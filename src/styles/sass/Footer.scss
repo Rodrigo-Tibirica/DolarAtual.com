@@ -1,10 +1,12 @@
 @import "_Fontes";
 @import "_config";
 .footer {
+    margin-top: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     background: #29313a;
-    height: 100%;
+
     font-family: OpenSans;
     ul {
         width: 90%;

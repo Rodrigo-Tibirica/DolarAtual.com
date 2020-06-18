@@ -1,56 +1,29 @@
 import React from "react";
 import "../../styles/css/Conversor.css";
-import axios from "axios";
-import Grafico from "./Grafico";
-
+import NumberFormat from "react-number-format";
 export default (props) => {
-    const {
-        flag1,
-        flag2,
-        siglaOrigem,
-        siglaDestino,
-        cifraoOrigem,
-        cifraoDestino,
-        valorOrigem,
-        valorDestino,
-    } = props;
+    
+    const handleFocus = (e) => e.target.select();
+    const { flag, sigla, cifrao, valor, mudarValor } = props;
     return (
         <div className="Conversor">
-            <div className="conversor-origem">
-                <div className="flag-container">
-                    <img className="flag" src={flag1} />
-                    <span className="moeda">{siglaOrigem}</span>
-                </div>
-
-                <div className="input-container">
-                    <p className>
-                        <span className="cifrao">{cifraoOrigem}</span>
-                    </p>
-                    <input
-                        className="input-origem"
-                        type="number"
-                        value={valorOrigem}
-                    />
-                </div>
+            <div className="flag-container">
+                <img className="flag" src={flag} />
+                <span className="moeda">{sigla}</span>
             </div>
 
-            <div className="conversor-destino">
-                <div className="flag-container">
-                    <img className="flag" src={flag2} />
-                    <span className="moeda">{siglaDestino}</span>
-                </div>
-
-                <div className="input-container">
-                    <p className>
-                        <span className="cifrao">{cifraoDestino}</span>
-                    </p>
-                    <input
-                        className="input-destino"
-                        type="number"
-                        value={valorDestino}
-                        onChange=""
-                    ></input>
-                </div>
+            <div className="input-container">
+                <p className>
+                    <span className="cifrao">{cifrao}</span>
+                </p>
+                {/* <input
+                    className="input-valor"
+                    type="number"
+                    value={valor}
+                    onChange={mudarValor}
+                    onFocus={handleFocus}
+                /> */}
+                <NumberFormat className="input-valor" thousandSeparator={true}  decimalScale="2" value={valor} onChange={mudarValor}/>
             </div>
         </div>
     );

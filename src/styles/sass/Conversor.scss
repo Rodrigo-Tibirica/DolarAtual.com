@@ -1,91 +1,82 @@
 @import "_Fontes";
 
 .Conversor {
-    width: 60em;
-    margin: 1em;
     display: flex;
-    justify-content: center;
-    height: 15em;
-    font-family: Mont;
-    .conversor-origem,
-    .conversor-destino {
+    flex-direction: column;
+    // justify-content: center;
+    // padding: 0 1.5em;
+    background: #edf1ff;
+    height: 100%;
+    width: 28em;
+    .flag-container {
         // border: 0.1em red solid;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        margin-bottom: 2em;
+        align-items: center;
+        padding: 1em 1.5em;
         // padding: 0 1.5em;
-        background: #edf1ff;
-        height: 100%;
-        width: 28em;
-        .flag-container {
-            display: flex;
-            margin-bottom: 1em;
-            align-items: center;
-            padding: 1em 1.5em;
-            // padding: 0 1.5em;
-            .flag {
-                width: 2.5em;
-                height: 2.5em;
-                margin-left: 1em;
-            }
-            .moeda {
+        background: #29313a;
+        .flag {
+            width: 2.5em;
+            height: 2.5em;
+            margin-left: 1em;
+        }
+        .moeda {
+            color: #edf1ff;
+            margin-left: 0.5em;
+            font-size: 1.2rem;
+        }
+    }
+
+    .input-container {
+        display: flex;
+        margin-right: 1em;
+        margin-top: 0.5em;
+        align-self: center;
+        p {
+            margin-left: 2em;
+            margin-top: 1em;
+            // margin-right: 0.5em;
+
+            .cifrao {
+                font-size: 3rem;
                 color: #000;
-                margin-left: 0.5em;
-                font-size: 1.2rem;
+                font-family: Mont-Regular;
             }
         }
-
-        .input-container {
-            display: flex;
-            margin-right: 1em;
-            margin-bottom: 2em;
-            justify-content: flex-start;
-            p {
-                margin-left: 2em;
-                margin-top: 1em;
-                // margin-right: 0.5em;
-
-                .cifrao {
-                    font-size: 3rem;
-                    color: #000;
-                    font-family: Mont-Regular;
-                }
+        .input-valor {
+            font-family: Quicksand;
+            color: #000;
+            border: none;
+            background: #edf1ff;
+            border-bottom: 0.03em #ccc solid;
+            font-size: 4rem;
+            width: 4.5em;
+            text-align: center;
+            &:focus {
+                outline: none;
+                border-bottom: 0.04em #000 solid;
             }
-            .input-origem,
-            .input-destino {
-                font-family: Quicksand;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            &[type="number"] {
+                -moz-appearance: textfield;
+            }
+            &::placeholder {
                 color: #000;
-                border: none;
-                background: #edf1ff;
-                border-bottom: 0.03em #ccc solid;
-                font-size: 4rem;
-                width: 4.5em;
                 text-align: center;
-                &:focus {
-                    outline: none;
-                    border-bottom: 0.04em #000 solid;
-                }
-                &::-webkit-outer-spin-button,
-                &::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                }
-                &[type="number"] {
-                    -moz-appearance: textfield;
-                }
-                &::placeholder {
-                    color: #000;
-                    text-align: center;
-                }
             }
         }
     }
-    .conversor-destino {
-        background: #f4f9ff;
-        border-left: 0.1em #243a5e solid;
-        .input-container {
-            .input-destino {
-                background: #f4f9ff;
-            }
+}
+.conversor-destino {
+    background: #f4f9ff;
+    border-left: 0.1em white solid;
+    .input-container {
+        .input-destino {
+            background: #f4f9ff;
         }
     }
 }

@@ -8,8 +8,17 @@ import Origem_Flag_Icon from "../../assets/icons/us.png";
 import Destino_Flag_Icon from "../../assets/icons/br.png";
 
 export default (params) => {
-    const [cambio, setCambio] = useState("");
-    const [valorOrigem, setvalorOrigem] = useState(1.00);
+    const [Cambio, setCambio] = useState("");
+    const [Valor, setaValor] = useState(1.0.toFixed(2))
+    const [origemInput, setaorigemInput] = useState("origem");
+    let valorOrigem, valorDestino;
+    if (origemInput === "origem") {
+        valorOrigem = Valor;
+        valorDestino = valorOrigem * Cambio;
+    } else if (origemInput === "destino") {
+        valorDestino = Valor;
+        valorOrigem = valorDestino / Cambio;
+    }
 
     useEffect(() => {
         buscar();
@@ -18,28 +27,45 @@ export default (params) => {
     const buscar = async () => {
         const API_Data = await buscarCambio("USD");
         console.log(API_Data);
-        setCambio(API_Data);
+        setCambio(API_Data.USD.ask);
+    };
+
+    const atualizarValorOrigem = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("origem");
+    };
+    const atualizarValorDestino = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("destino");
     };
 
     return (
         <Fragment>
-            <div className="Dolar">
+            <section className="Dolar">
                 <div className="main-banner">
                     <img src={Banner_Flag} alt="" />
                     <h1>Dólar Hoje </h1>
                 </div>
-
-                <Conversor
-                    flag1={Origem_Flag_Icon}
-                    flag2={Destino_Flag_Icon}
-                    cifraoOrigem="US$"
-                    cifraoDestino="R$"
-                    siglaOrigem="USD"
-                    siglaDestino="BRL"
-                    valorOrigem={valorOrigem.toFixed(2)}
-                    valorDestino={cambio}
-                />
-            </div>
+                <div className="conversor-container">
+                    <Conversor
+                        flag={Origem_Flag_Icon}
+                        cifrao="US$"
+                        sigla="USD"
+                        valor={valorOrigem}
+                        mudarValor={atualizarValorOrigem}
+                    />
+                    <div className="Arrow">&#11138;</div>
+                    <Conversor
+                        flag={Destino_Flag_Icon}
+                        cifrao="R$"
+                        sigla="BRL"
+                        valor={valorDestino}
+                        mudarValor={atualizarValorDestino}
+                    />
+                </div>
+            </section>
 
             <nav className="dollar-scroll-header">
                 <ul className="dollar-menu">
@@ -54,7 +80,7 @@ export default (params) => {
                     </li>
                 </ul>
             </nav>
-
+            <Grafico/>
             <div className="dolarcomercial-info"></div>
         </Fragment>
     );

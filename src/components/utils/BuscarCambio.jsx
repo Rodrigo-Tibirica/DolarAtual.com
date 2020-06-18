@@ -5,12 +5,13 @@ export default async (base) => {
     console.log(base);
     return axios({
         method: "GET",
-        url: `https://api.exchangerate.host/latest?base=${base}&symbols=BRL`,
+        url: `https://economia.awesomeapi.com.br/json/all/${base}-BRL`,
+        
     })
         .then((response) => {
-            const valor = response.data.rates.BRL;
+            const valor = response.data;
             console.log(valor);
-            return parseFloat(valor).toFixed(2);
+            return valor;
         })
         .catch((error) => {
             console.log(error);

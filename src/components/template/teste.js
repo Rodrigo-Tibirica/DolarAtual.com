@@ -3,10 +3,10 @@ const axios = require("axios");
 const buscarVariacao = async (base) => {
     const result = await axios({
         method: "GET",
-        url: `https://api.exchangerate.host/latest?base=USD`,
+        url: `https://economia.awesomeapi.com.br/json/all/USD-BRL,EUR-BRL`,
     })
         .then((response) => {
-            console.log(Object.keys(response.data.rates))
+            console.log(response.data)
             // const valor = parseFloat(response.data.USD.ask).toFixed(2);
             // const data = response.data.USD.create_date;
             // this.setState({ valor, data });

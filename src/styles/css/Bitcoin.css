@@ -1,114 +1,106 @@
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Montserrat-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Mont-Medium";
-  src: url("../fonts/Montserrat-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Mont-Regular";
-  src: url("../fonts/Montserrat-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("../fonts/Quicksand-Variable.ttf");
-}
-
-/* No CSS */
-@font-face {
-  font-family: "FonteTenali";
-  src: url("../fonts/TenaliRamakrishna-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/RobotoCondensed-Regular.ttf");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Regular.ttf");
-}
-
 .Bitcoin {
+  width: 100%;
+  height: 33em;
   display: grid;
-  height: 50vh;
-  width: 50vw;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: Quicksand;
+  background: #fdfdfd;
 }
 
-.Bitcoin .logo-moeda {
+.Bitcoin .main-banner {
+  padding: 2em;
+  margin-top: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-column: 2/4;
-  grid-row: 1/2;
 }
 
-.Bitcoin .logo-moeda img {
-  height: 5em;
-  margin: auto;
-}
-
-.Bitcoin .nome-moeda {
-  display: flex;
-  justify-content: center;
-  grid-row: 2/3;
-  grid-column: 2/4;
-  margin-bottom: 2em;
-}
-
-.Bitcoin .nome-moeda h1 {
-  font-family: Quicksand;
-  color: #F5F7F6;
-  font-size: 2.5em;
-}
-
-.Bitcoin .valor {
-  border: grey 2px solid;
-  display: flex;
-  border: grey 2px solid;
-  justify-content: space-between;
-  align-items: center;
-  grid-row: 3/4;
-  grid-column: 2/4;
+.Bitcoin .main-banner img {
+  width: 6em;
   height: 6em;
-  border: .3em solid transparent;
-  border-radius: 5em;
-  background-image: linear-gradient(#F5F7F6, #F5F7F6), radial-gradient(circle at top left, #fd00da, #19d7f8);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  margin-bottom: 10em;
+  border: 0.05em #fdfdfd   solid;
 }
 
-.Bitcoin .valor .cifrao {
-  font-size: 2em;
-  color: #58B467;
-  margin-left: 3em;
+.Bitcoin .main-banner h1 {
+  margin-left: 0.3em;
+  font-family: Mont;
+  font-size: 5rem;
+  color: #6A72E0  ;
 }
 
-.Bitcoin .valor .cambio {
-  color: #58B467;
-  margin-right: 3.2em;
-  font-size: 5em;
+.Bitcoin .Arrow {
+  display: flex;
+  align-items: center;
+  content: "8644";
+  color: #6A72E0  ;
+  font-size: 4rem;
+  padding: .1em;
 }
 
-.Bitcoin .atualizado {
+.Bitcoin .conversor-container {
+  width: 60em;
+  margin: 2em;
   display: flex;
   justify-content: center;
-  grid-column: 2/4;
-  grid-row: 4/5;
-  margin-bottom: 6em;
+  height: 15em;
+  font-family: Mont;
 }
 
-.Bitcoin .atualizado p {
-  font-size: 1em;
+.bitcoin-scroll-header {
+  display: flex;
+  width: 100%;
+  background: #4717f6 ;
+  align-items: center;
+  justify-content: center;
+}
+
+.bitcoin-scroll-header .bitcoin-menu {
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.bitcoin-scroll-header .bitcoin-menu li {
+  padding: 0 6em;
+}
+
+.bitcoin-scroll-header .bitcoin-menu li a {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: #f4f9ff;
+}
+
+.bitcoin-scroll-header .bitcoin-menu li a:hover {
+  color: #a7092a;
+  padding-bottom: 0.5em;
+  border-bottom: 0.2rem solid #a7092a;
+}
+
+.bitcoin-scroll-header .bitcoin-menu li a:focus {
+  padding-bottom: 0.5em;
+  border-bottom: 0.2rem solid #a7092a;
+}
+
+.bitcoincomercial-info {
+  height: 30em;
+}
+
+@media (max-width: 800px) {
+  .Bitcoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    height: 100%;
+    padding: 0;
+  }
+  .Bitcoin .valor-comercial {
+    height: 45%;
+    width: 70%;
+  }
+  .Bitcoin .valor-turismo {
+    height: 45%;
+    width: 70%;
+  }
 }

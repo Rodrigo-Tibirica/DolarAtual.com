@@ -3,23 +3,24 @@ import "../styles/css/App.css";
 
 import Header from "../components/template/Header";
 import Main from "../components/template/Main";
-import Conversor from "../components/template/Conversor";
-import Grafico from "../components/template/Grafico";
-import MoedasAtuais from "../components/template/MoedasAtuais";
+import Conversor from "../components/utils/Conversor";
+import Grafico from "../components/utils/Grafico";
+import Dolar from "../components/pages/Dolar";
 import Footer from "../components/template/Footer";
 import { BrowserRouter } from "react-router-dom";
 
 export default (props) => {
     return (
         <BrowserRouter>
-            <Header />
-            <div className="app">
-                <Main />
+                <Header />
+            <section className="app">
+                {/* <Main /> */}
+                <Dolar />
                 {/* <Conversor /> */}
-                <Grafico />
                 {/* <MoedasAtuais /> */}
-            </div>
-                <Footer />
+            </section>
+                <Footer id="middle" />
+            {/* <Grafico /> */}
         </BrowserRouter>
     );
 };

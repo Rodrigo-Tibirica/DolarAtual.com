@@ -35,11 +35,11 @@
 }
 
 .Conversor {
-  width: 100em;
-  margin: 10em;
+  width: 60em;
+  margin: 1em;
   display: flex;
   justify-content: center;
-  height: 16em;
+  height: 15em;
   font-family: Mont;
 }
 
@@ -48,10 +48,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1.5em;
   background: #edf1ff;
   height: 100%;
-  width: 32em;
+  width: 28em;
 }
 
 .Conversor .conversor-origem .flag-container,
@@ -59,14 +58,14 @@
   display: flex;
   margin-bottom: 1em;
   align-items: center;
-  padding: 1em;
+  padding: 1em 1.5em;
 }
 
 .Conversor .conversor-origem .flag-container .flag,
 .Conversor .conversor-destino .flag-container .flag {
-  width: 3em;
-  height: 3em;
-  margin-left: 2.5em;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 1em;
 }
 
 .Conversor .conversor-origem .flag-container .moeda,
@@ -86,8 +85,8 @@
 
 .Conversor .conversor-origem .input-container p,
 .Conversor .conversor-destino .input-container p {
-  margin-left: 3.3em;
-  margin-right: 1em;
+  margin-left: 2em;
+  margin-top: 1em;
 }
 
 .Conversor .conversor-origem .input-container p .cifrao,
@@ -97,34 +96,59 @@
   font-family: Mont-Regular;
 }
 
-.Conversor .conversor-origem .input-container input,
-.Conversor .conversor-destino .input-container input {
-  font-family: Mont-Regular;
-  width: 5.9em;
-  background: #edf1ff;
+.Conversor .conversor-origem .input-container .input-origem,
+.Conversor .conversor-origem .input-container .input-destino,
+.Conversor .conversor-destino .input-container .input-origem,
+.Conversor .conversor-destino .input-container .input-destino {
+  font-family: Quicksand;
+  color: #000;
   border: none;
-  border-bottom: 0.04em #ccc solid;
-  font-size: 3rem;
+  background: #edf1ff;
+  border-bottom: 0.03em #ccc solid;
+  font-size: 4rem;
+  width: 4.5em;
+  text-align: center;
 }
 
-.Conversor .conversor-origem .input-container input:focus, .Conversor .conversor-origem .input-container input:focus,
-.Conversor .conversor-destino .input-container input:focus,
-.Conversor .conversor-destino .input-container input:focus {
+.Conversor .conversor-origem .input-container .input-origem:focus,
+.Conversor .conversor-origem .input-container .input-destino:focus,
+.Conversor .conversor-destino .input-container .input-origem:focus,
+.Conversor .conversor-destino .input-container .input-destino:focus {
   outline: none;
+  border-bottom: 0.04em #000 solid;
 }
 
-.Conversor .conversor-origem .input-container input::-webkit-outer-spin-button, .Conversor .conversor-origem .input-container input::-webkit-inner-spin-button,
-.Conversor .conversor-destino .input-container input::-webkit-outer-spin-button,
-.Conversor .conversor-destino .input-container input::-webkit-inner-spin-button {
+.Conversor .conversor-origem .input-container .input-origem::-webkit-outer-spin-button, .Conversor .conversor-origem .input-container .input-origem::-webkit-inner-spin-button,
+.Conversor .conversor-origem .input-container .input-destino::-webkit-outer-spin-button,
+.Conversor .conversor-origem .input-container .input-destino::-webkit-inner-spin-button,
+.Conversor .conversor-destino .input-container .input-origem::-webkit-outer-spin-button,
+.Conversor .conversor-destino .input-container .input-origem::-webkit-inner-spin-button,
+.Conversor .conversor-destino .input-container .input-destino::-webkit-outer-spin-button,
+.Conversor .conversor-destino .input-container .input-destino::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.Conversor .conversor-origem .input-container .input-origem[type="number"],
+.Conversor .conversor-origem .input-container .input-destino[type="number"],
+.Conversor .conversor-destino .input-container .input-origem[type="number"],
+.Conversor .conversor-destino .input-container .input-destino[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Conversor .conversor-origem .input-container .input-origem::placeholder,
+.Conversor .conversor-origem .input-container .input-destino::placeholder,
+.Conversor .conversor-destino .input-container .input-origem::placeholder,
+.Conversor .conversor-destino .input-container .input-destino::placeholder {
+  color: #000;
+  text-align: center;
 }
 
 .Conversor .conversor-destino {
   background: #f4f9ff;
-  border-left: 0.1em #243A5E solid;
+  border-left: 0.1em #243a5e solid;
 }
 
-.Conversor .conversor-destino .input-container input {
+.Conversor .conversor-destino .input-container .input-destino {
   background: #f4f9ff;
 }
 

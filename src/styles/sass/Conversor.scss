@@ -1,31 +1,33 @@
 @import "_Fontes";
+
 .Conversor {
-    width: 100em;
-    margin: 10em;
+    width: 60em;
+    margin: 1em;
     display: flex;
     justify-content: center;
-    height: 16em;
+    height: 15em;
     font-family: Mont;
     .conversor-origem,
     .conversor-destino {
+        // border: 0.1em red solid;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 1.5em;
+        // padding: 0 1.5em;
         background: #edf1ff;
         height: 100%;
-        width: 32em; 
+        width: 28em;
         .flag-container {
             display: flex;
             margin-bottom: 1em;
             align-items: center;
-            padding: 1em;
+            padding: 1em 1.5em;
+            // padding: 0 1.5em;
             .flag {
-                width: 3em;
-                height: 3em;
-                margin-left: 2.5em;
+                width: 2.5em;
+                height: 2.5em;
+                margin-left: 1em;
             }
-
             .moeda {
                 color: #000;
                 margin-left: 0.5em;
@@ -39,8 +41,9 @@
             margin-bottom: 2em;
             justify-content: flex-start;
             p {
-                margin-left: 3.3em;
-                margin-right: 1em;
+                margin-left: 2em;
+                margin-top: 1em;
+                // margin-right: 0.5em;
 
                 .cifrao {
                     font-size: 3rem;
@@ -48,30 +51,39 @@
                     font-family: Mont-Regular;
                 }
             }
-            input {
-                font-family: Mont-Regular;
-                width: 5.9em;
-                background: #edf1ff;
+            .input-origem,
+            .input-destino {
+                font-family: Quicksand;
+                color: #000;
                 border: none;
-                border-bottom: 0.04em #ccc solid;
-                // height:1em;
-                font-size: 3rem;
-                &:focus,
+                background: #edf1ff;
+                border-bottom: 0.03em #ccc solid;
+                font-size: 4rem;
+                width: 4.5em;
+                text-align: center;
                 &:focus {
                     outline: none;
+                    border-bottom: 0.04em #000 solid;
                 }
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {
                     -webkit-appearance: none;
+                }
+                &[type="number"] {
+                    -moz-appearance: textfield;
+                }
+                &::placeholder {
+                    color: #000;
+                    text-align: center;
                 }
             }
         }
     }
     .conversor-destino {
         background: #f4f9ff;
-        border-left: 0.1em #243A5E solid;
+        border-left: 0.1em #243a5e solid;
         .input-container {
-            input {
+            .input-destino {
                 background: #f4f9ff;
             }
         }

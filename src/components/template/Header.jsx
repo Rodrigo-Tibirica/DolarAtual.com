@@ -35,7 +35,7 @@ export default (props) => {
                         <Link to="/bitcoinhoje">Bitcoin </Link>
                     </li>
                 </ul>
-                <a href="" className="Sobre">Sobre</a>
+                <a href="#" className="Sobre" onClick="document.getElementById('middle').scrollIntoView(true);">Sobre</a>
             </nav>
         </header>
     );

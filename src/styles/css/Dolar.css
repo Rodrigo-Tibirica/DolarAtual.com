@@ -1,44 +1,72 @@
 .Dolar {
+  width: 100%;
+  height: 33em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background: #a7092a;
+}
+
+.Dolar .main-banner {
+  padding: 2em;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dolar .main-banner img {
+  width: 6em;
+  height: 6em;
+  border: 0.05em #F4F9FF solid;
+}
+
+.Dolar .main-banner h1 {
+  margin-left: 0.3em;
+  font-family: Mont;
+  font-size: 5rem;
+  color: #F4F9FF;
+}
+
+.dollar-scroll-header {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  border: 0.1em green solid;
+  background: #002868;
+  align-items: center;
+  justify-content: center;
 }
 
-.Dolar .valor-comercial {
-  width: 45%;
-}
-
-.Dolar .valor-turismo {
-  width: 45%;
-}
-
-.Dolar .valor-comercial,
-.Dolar .valor-turismo {
+.dollar-scroll-header .dollar-menu {
+  height: 5em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 3.5em 2.5em;
-  background-color: #edf1ff;
-  border: 0.2em solid;
-  border-image: linear-gradient(#b60017, rgba(0, 0, 0, 0)) 1 100%;
+  align-items: center;
 }
 
-.Dolar .valor-comercial .titulo,
-.Dolar .valor-turismo .titulo {
-  font-size: 2.2rem;
+.dollar-scroll-header .dollar-menu li {
+  padding: 0 6em;
 }
 
-.Dolar .valor-comercial .cambio,
-.Dolar .valor-turismo .cambio {
-  color: #58b467;
-  font-size: 3.5rem;
+.dollar-scroll-header .dollar-menu li a {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: #F4F9FF;
 }
 
-.Dolar .valor-comercial p,
-.Dolar .valor-turismo p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.7rem;
+.dollar-scroll-header .dollar-menu li a:hover {
+  color: #a7092a;
+  padding-bottom: .5em;
+  border-bottom: 0.2rem solid #a7092a;
+}
+
+.dollar-scroll-header .dollar-menu li a:focus {
+  padding-bottom: .5em;
+  border-bottom: 0.2rem solid #a7092a;
+}
+
+.dolarcomercial-info {
+  height: 30em;
+  background-color: yellow;
 }
 
 @media (max-width: 800px) {
@@ -46,7 +74,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: .5em;
     height: 100%;
     padding: 0;
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/css/Main.css";
-import Conversor from "./Conversor";
-import Grafico from "./Grafico";
+import Conversor from "../utils/Conversor";
+import Grafico from "../utils/Grafico";
 import Router from "../../routes/routes";
 
 //export default (props) => <div className="main"><Dolar/></div>;
@@ -11,7 +11,7 @@ export default (props) => {
             
             <div className="main">
                 <Conversor />
-                {/* <Grafico /> */}
+                
             </div>
             
     

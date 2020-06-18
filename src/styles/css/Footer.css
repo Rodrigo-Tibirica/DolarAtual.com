@@ -35,16 +35,19 @@
 }
 
 .footer {
-  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   background: #29313a;
+  height: 5em;
+  position: relative;
+  bottom: 0;
+  left: 0;
   font-family: OpenSans;
 }
 
 .footer ul {
-  width: 90%;
+  width: 90em;
   justify-content: space-between;
   display: inline-flex;
   list-style: none;
@@ -56,5 +59,5 @@
 
 .footer ul li a {
   color: #d8dde4;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }

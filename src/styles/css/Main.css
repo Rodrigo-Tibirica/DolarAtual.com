@@ -38,13 +38,11 @@
   width: 100%;
   margin: auto;
   justify-content: center;
-  display: grid;
+  display: flex;
   justify-items: center;
   font-family: Quicksand;
   background: #A6BE47;
   color: #232b2b;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
 }
 
 @media (max-width: 800px) {

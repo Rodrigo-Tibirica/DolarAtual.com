@@ -5,14 +5,12 @@
     margin: auto;
     justify-content: center;
     // border: 0.1em red solid;
-    display: grid;
+    display: flex;
     justify-items: center;
     // padding: 5em;
     font-family: Quicksand;
     background: #A6BE47;//A6BE47
     color: #232b2b;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
 
 
 }

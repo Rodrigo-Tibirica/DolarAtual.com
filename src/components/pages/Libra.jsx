@@ -1,58 +1,90 @@
-// import React, { useState, useEffect } from "react";
-// import "../../styles/css/Libra.css";
-// import { GBP_URL } from "../../../utils/URLS";
-// import axios from "axios";
+import React, { useState, useEffect,Fragment } from "react";
+import "../../styles/css/Libra.css";
+import axios from "axios";
+import Conversor from "../utils/Conversor";
+import Grafico from "../utils/Grafico";
+import Banner_Flag from "../../assets/libra.png"
+import Origem_Flag_Icon from "../../assets/libra.png";
+import Destino_Flag_Icon from "../../assets/icons/br.png";
+import buscarCambio from "../utils/BuscarCambio";
+
+export default (params) => {
+    const [Cambio, setCambio] = useState("");
+    const [Valor, setaValor] = useState(1.0.toFixed(2))
+    const [origemInput, setaorigemInput] = useState("origem");
+    let valorOrigem, valorDestino;
+
+    if (origemInput === "origem") {
+        valorOrigem = Valor;
+        valorDestino = valorOrigem * Cambio;
+    } else if (origemInput === "destino") {
+        valorDestino = Valor;
+        valorOrigem = valorDestino / Cambio;
+    }
+
+    useEffect(() => {
+        buscar();
+    }, []);
 
 
-// export default (params) => {
-//     const [cambio, setValor] = useState("");
-//     const [data, setData] = useState("");
-//     const [hora, setHora] = useState("");
+    const buscar = async () => {
+        const API_Data = await buscarCambio("GBP");
+        console.log(API_Data);
+        setCambio(API_Data.GBP.ask);
+    };
 
-//     useEffect(() => {
-//         buscarCambio();
-//     }, []);
+    const atualizarValorOrigem = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("origem");
+    };
+    const atualizarValorDestino = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("destino");
+    };
 
-//     const buscarCambio = async () => {
-//         const dataAPI = await axios({
-//             method: "GET",
-//             url: GBP_URL,
-//         })
-//             .then((response) => {
-//                 return response.data;
-//                 // const valor = parseFloat(response.data.GBP.ask).toFixed(2);
-//                 //const data = response.data.GBP.create_date;
-//                 //this.setState({ valor, data });
-//             })
-//             .catch((error) => {
-//                 console.log(error);
-//             });
-//         const cambio = parseFloat(dataAPI.GBP.ask).toFixed(2);
-//         const split = dataAPI.GBP.create_date.split(" ");
-//         const aux = split[0].split("-");
-//         const data_formatada = aux[2] + "/" + aux[1] + "/" + aux[0];
-//         const hora = split[1];
-//         setValor(cambio);
-//         setData(data_formatada);
-//         setHora(hora);
-//     };
-
-//     return (
-//         <div className="Libra">
-
-
-//             <div className="nome-moeda">
-//                 <h1>Euro Hoje</h1>
-//             </div>
-
-//             <div className="valor">
-//                 <p className="cifrao">{`R$`}</p>
-//                 <p className="cambio"> {`${cambio}`}</p>
-//             </div>
-
-//             <div className="atualizado">
-//                 <p>{`Atualizado em: ${data} as ${hora}`}</p>
-//             </div>
-//         </div>
-//     );
-// };
+    return (
+            <Fragment>
+                <section className="Libra">
+                    <div className="main-banner">
+                        <img src={Banner_Flag} alt="" />
+                        <h1>Libra Hoje </h1>
+                    </div>
+                    <div className="conversor-container">
+                        <Conversor
+                            flag={Origem_Flag_Icon}
+                            cifrao="£"
+                            sigla="GBP"
+                            valor={valorOrigem}
+                            mudarValor={atualizarValorOrigem}
+                        />
+                        <div className="Arrow">&#11138;</div>
+                        <Conversor
+                            flag={Destino_Flag_Icon}
+                            cifrao="R$"
+                            sigla="BRL"
+                            valor={valorDestino}
+                            mudarValor={atualizarValorDestino}
+                        />
+                    </div>
+                </section>
+    
+                <nav className="libra-scroll-header">
+                    <ul className="libra-menu">
+                        <li>
+                            <a href="#">Libra Comercial</a>
+                        </li>
+                        <li>
+                            <a href="#">Libra Turismo</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre o Libra</a>
+                        </li>
+                    </ul>
+                </nav>
+                <Grafico/>
+                <div className="libracomercial-info"></div>
+            </Fragment>
+        );
+    };

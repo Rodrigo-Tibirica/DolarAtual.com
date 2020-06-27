@@ -36,7 +36,7 @@
 
 .header-container {
   border-bottom: 0.15rem solid;
-  border-image: radial-gradient(ellipse, #e6e9ed, #53b86a) 1;
+  border-image: radial-gradient(ellipse, #e6e9ed, #002868) 1;
 }
 
 .header {
@@ -64,8 +64,8 @@
 }
 
 .header .header-menu li a:hover, .header .header-menu li a:focus {
-  color: #53b86a;
-  border-bottom: 0.1rem solid #53b86a;
+  color: #ffffff;
+  border-bottom: 0.1rem solid #ffffff;
 }
 
 .menu-btn {
@@ -77,6 +77,8 @@
   display: none;
 }
 
+
+
 @media (max-width: 860px) {
   .header {
     height: 3em;
@@ -84,10 +86,12 @@
     padding: 0;
   }
   .header .Logo {
+    color: #ffffff;
     padding-left: 2.7em;
     margin: auto;
   }
   .header .Sobre {
+    color: #ffffff;
     padding-right: 1em;
     font-size: 0.8rem;
   }
@@ -101,13 +105,13 @@
     height: 100%;
     transform: translateX(-50em);
     transition: transform 0.5s ease-in-out;
-    border-right: #ccc 0.1em solid;
+    border-right: #ffffff 0.1em solid;
     opacity: 0.9;
     padding: 2em;
   }
   .header .header-menu li {
     padding: 1em;
-    border-bottom: 0.1em #ccc solid;
+    border-bottom: 0.1em #ffffff;
   }
   .header .header-menu li:last-child {
     border-bottom: 0;

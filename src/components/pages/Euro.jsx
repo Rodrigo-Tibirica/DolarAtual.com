@@ -1,59 +1,87 @@
-// import React, { useState, useEffect } from "react";
-// import "../../styles/css/Euro.css";
-// import { EUR_URL } from "../../../utils/URLS";
-// import axios from "axios";
+import React, { useState, useEffect,Fragment } from "react";
+import "../../styles/css/Euro.css";
+import axios from "axios";
+import Conversor from "../utils/Conversor";
+import Grafico from "../utils/Grafico";
+import Banner_Flag from "../../assets/euro.png"
+import Origem_Flag_Icon from "../../assets/euro.png";
+import Destino_Flag_Icon from "../../assets/icons/br.png";
+import buscarCambio from "../utils/BuscarCambio";
 
+export default (params) => {
+    const [Cambio, setCambio] = useState("");
+    const [Valor, setaValor] = useState(1.0.toFixed(2))
+    const [origemInput, setaorigemInput] = useState("origem");
+    let valorOrigem, valorDestino;
 
-// export default (params) => {
-//     const [cambio, setValor] = useState("");
-//     const [data, setData] = useState("");
-//     const [hora, setHora] = useState("");
+    if (origemInput === "origem") {
+        valorOrigem = Valor;
+        valorDestino = valorOrigem * Cambio;
+    } else if (origemInput === "destino") {
+        valorDestino = Valor;
+        valorOrigem = valorDestino / Cambio;
+    }
+    useEffect(() => {
+        buscar();
+    }, []);
+    const buscar = async () => {
+        const API_Data = await buscarCambio("EUR");
+        console.log(API_Data);
+        setCambio(API_Data.EUR.ask);
+    };
 
-//     useEffect(() => {
-//         buscarCambio();
-//     }, []);
+    const atualizarValorOrigem = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("origem");
+    };
+    const atualizarValorDestino = (e) => {
+        let value = e.target.value.split(",").join("");
+        setaValor(value);
+        setaorigemInput("destino");
+    };
 
-//     const buscarCambio = async () => {
-//         const dataAPI = await axios({
-//             method: "GET",
-//             url: EUR_URL,
-//         })
-//             .then((response) => {
-//                 return response.data;
-//                 // const valor = parseFloat(response.data.USD.ask).toFixed(2);
-//                 // const data = response.data.USD.create_date;
-//                 // this.setState({ valor, data });
-//             })
-//             .catch((error) => {
-//                 console.log(error);
-//             });
-
-//         const cambio = parseFloat(dataAPI.EUR.ask).toFixed(2);
-//         const split = dataAPI.EUR.create_date.split(" ");
-//         const aux = split[0].split("-");
-//         const data_formatada = aux[2] + "/" + aux[1] + "/" + aux[0];
-//         const hora = split[1];
-//         setValor(cambio);
-//         setData(data_formatada);
-//         setHora(hora);
-//     };
-
-//     return (
-//         <div className="Euro">
-   
-
-//             <div className="nome-moeda">
-//                 <h1>Euro Hoje</h1>
-//             </div>
-
-//             <div className="valor">
-//                 <p className="cifrao">{`R$`}</p>
-//                 <p className="cambio"> {`${cambio}`}</p>
-//             </div>
-
-//             <div className="atualizado">
-//                 <p>{`Atualizado em: ${data} as ${hora}`}</p>
-//             </div>
-//         </div>
-//     );
-// };
+    return (
+            <Fragment>
+                <section className="Euro">
+                    <div className="main-banner">
+                        <img src={Banner_Flag} alt="" />
+                        <h1>Euro Hoje </h1>
+                    </div>
+                    <div className="conversor-container">
+                        <Conversor
+                            flag={Origem_Flag_Icon}
+                            cifrao="€"
+                            sigla="EUR"
+                            valor={valorOrigem}
+                            mudarValor={atualizarValorOrigem}
+                        />
+                        <div className="Arrow">&#11138;</div>
+                        <Conversor
+                            flag={Destino_Flag_Icon}
+                            cifrao="R$"
+                            sigla="BRL"
+                            valor={valorDestino}
+                            mudarValor={atualizarValorDestino}
+                        />
+                    </div>
+                </section>
+    
+                <nav className="euro-scroll-header">
+                    <ul className="euro-menu">
+                        <li>
+                            <a href="#">Euro Comercial</a>
+                        </li>
+                        <li>
+                            <a href="#">Euro Turismo</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre o Euro</a>
+                        </li>
+                    </ul>
+                </nav>
+                <Grafico/>
+                <div className="eurocomercial-info"></div>
+            </Fragment>
+        );
+    };

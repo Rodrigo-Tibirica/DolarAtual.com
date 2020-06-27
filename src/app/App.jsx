@@ -8,14 +8,14 @@ import Grafico from "../components/utils/Grafico";
 import Dolar from "../components/pages/Dolar";
 import Footer from "../components/template/Footer";
 import { BrowserRouter } from "react-router-dom";
-
+import Router from "../routes/routes"
 export default (props) => {
     return (
         <BrowserRouter>
             <section className="app">
                 <Header />
                 {/* <Main /> */}
-                <Dolar />
+                <Router />
                 {/* <Conversor /> */}
                 {/* <MoedasAtuais /> */}
             </section>

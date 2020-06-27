@@ -1,12 +1,11 @@
 import React, { useState, useEffect,Fragment } from "react";
 import "../../styles/css/Euro.css";
-import axios from "axios";
+import buscarCambio from "../utils/BuscarCambio";
 import Conversor from "../utils/Conversor";
 import Grafico from "../utils/Grafico";
-import Banner_Flag from "../../assets/euro.png"
-import Origem_Flag_Icon from "../../assets/euro.png";
+import Banner_Flag from "../../assets/icons/eu-flat.png"
+import Origem_Flag_Icon from "../../assets/icons/eu.png";
 import Destino_Flag_Icon from "../../assets/icons/br.png";
-import buscarCambio from "../utils/BuscarCambio";
 
 export default (params) => {
     const [Cambio, setCambio] = useState("");

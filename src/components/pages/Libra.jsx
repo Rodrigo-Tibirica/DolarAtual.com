@@ -1,10 +1,9 @@
 import React, { useState, useEffect,Fragment } from "react";
 import "../../styles/css/Libra.css";
-import axios from "axios";
 import Conversor from "../utils/Conversor";
 import Grafico from "../utils/Grafico";
-import Banner_Flag from "../../assets/libra.png"
-import Origem_Flag_Icon from "../../assets/libra.png";
+import Banner_Flag from "../../assets/icons/uk-flat.png"
+import Origem_Flag_Icon from "../../assets/icons/uk.png";
 import Destino_Flag_Icon from "../../assets/icons/br.png";
 import buscarCambio from "../utils/BuscarCambio";
 

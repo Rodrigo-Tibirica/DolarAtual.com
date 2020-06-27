@@ -55,7 +55,6 @@ export default (params) => {
                             valor={valorOrigem}
                             mudarValor={atualizarValorOrigem}
                         />
-                        <div className="Arrow">&#11138;</div>
                         <Conversor
                             flag={Destino_Flag_Icon}
                             cifrao="R$"

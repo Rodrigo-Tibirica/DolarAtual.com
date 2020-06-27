@@ -72,14 +72,14 @@
 }
 
 .dollar-scroll-header .dollar-menu li a:hover {
-  color: #a7092a;
+  color: #ffffff;
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #a7092a;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .dollar-scroll-header .dollar-menu li a:focus {
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #a7092a;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .dolarcomercial-info {

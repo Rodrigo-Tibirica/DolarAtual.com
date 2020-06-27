@@ -5,7 +5,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background: #fdfdfd;
+  background: #29313A;
 }
 
 .Bitcoin .main-banner {
@@ -19,24 +19,16 @@
 .Bitcoin .main-banner img {
   width: 6em;
   height: 6em;
-  border: 0.05em #fdfdfd   solid;
+
 }
 
 .Bitcoin .main-banner h1 {
   margin-left: 0.3em;
   font-family: Mont;
   font-size: 5rem;
-  color: #6A72E0  ;
+  color: #ffffff  ;
 }
 
-.Bitcoin .Arrow {
-  display: flex;
-  align-items: center;
-  content: "8644";
-  color: #6A72E0  ;
-  font-size: 4rem;
-  padding: .1em;
-}
 
 .Bitcoin .conversor-container {
   width: 60em;
@@ -50,7 +42,7 @@
 .bitcoin-scroll-header {
   display: flex;
   width: 100%;
-  background: #4717f6 ;
+  background: #002868 ;
   align-items: center;
   justify-content: center;
 }
@@ -68,18 +60,18 @@
 .bitcoin-scroll-header .bitcoin-menu li a {
   font-family: Roboto;
   font-size: 1.6rem;
-  color: #f4f9ff;
+  color: #ffffff;
 }
 
 .bitcoin-scroll-header .bitcoin-menu li a:hover {
-  color: #a7092a;
+  color: #ffffff;
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #a7092a;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .bitcoin-scroll-header .bitcoin-menu li a:focus {
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #a7092a;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .bitcoincomercial-info {

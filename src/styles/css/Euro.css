@@ -5,7 +5,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background: #fdfdfd;
+  background: #29313A;
 }
 
 .Euro .main-banner {
@@ -25,17 +25,9 @@
   margin-left: 0.3em;
   font-family: Mont;
   font-size: 5rem;
-  color: #6A72E0;
+  color: #ffffff;
 }
 
-.Euro .Arrow {
-  display: flex;
-  align-items: center;
-  content: "8644";
-  color: #6A72E0;
-  font-size: 4rem;
-  padding: .1em;
-}
 
 .Euro .conversor-container {
   width: 60em;
@@ -67,18 +59,18 @@
 .euro-scroll-header .euro-menu li a {
   font-family: Roboto;
   font-size: 1.6rem;
-  color: #6A72E0;
+  color: #ffffff;
 }
 
 .euro-scroll-header .euro-menu li a:hover {
-  color: #6A72E0;
+  color: #ffffff;
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #6A72E0;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .euro-scroll-header .euro-menu li a:focus {
   padding-bottom: 0.5em;
-  border-bottom: 0.2rem solid #6A72E0;
+  border-bottom: 0.2rem solid #ffffff;
 }
 
 .Eurocomercial-info {

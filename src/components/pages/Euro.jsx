@@ -79,7 +79,7 @@ export default (params) => {
                         </li>
                     </ul>
                 </nav>
-                <Grafico/>
+                <Grafico moeda="EUR"/>
                 <div className="eurocomercial-info"></div>
             </Fragment>
         );

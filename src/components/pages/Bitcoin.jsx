@@ -136,7 +136,7 @@ export default (params) => {
                     </li>
                 </ul>
             </nav>
-            <Grafico/>
+            <Grafico moeda="BTC"/>
             <div className="bitcoincomercial-info"></div>
         </Fragment>
     );

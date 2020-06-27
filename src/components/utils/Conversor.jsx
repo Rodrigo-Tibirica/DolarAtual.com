@@ -5,6 +5,7 @@ export default (props) => {
     
     const handleFocus = (e) => e.target.select();
     const { flag, sigla, cifrao, valor, mudarValor } = props;
+    
     return (
         <div className="Conversor">
             <div className="flag-container">

@@ -82,7 +82,7 @@ export default (params) => {
                         </li>
                     </ul>
                 </nav>
-                <Grafico/>
+                <Grafico moeda = "GBP"/>
                 <div className="libracomercial-info"></div>
             </Fragment>
         );

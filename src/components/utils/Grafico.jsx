@@ -11,10 +11,21 @@ export default (props) => {
         buscarVariacao();
     }, []);
 
+
     const buscarVariacao = async () => {
+        
+        const dataAtual = new Date();
+        const diaAtual = dataAtual.getDate();
+        const mesAtual = dataAtual.getMonth()>8?dataAtual.getMonth()+1:`0${dataAtual.getMonth()+1}`
+        const anoAtual = dataAtual.getFullYear();
+        const dataInicio = `${anoAtual}-${mesAtual}-${diaAtual-15}`
+        const dataFinal = `${anoAtual}-${mesAtual}-${diaAtual}`
+        
+        console.log(dataInicio);
+
         const result = await axios({
             method: "GET",
-            url: `https://api.exchangerate.host/timeseries?start_date=2020-06-01&end_date=2020-06-16&base=USD&symbols=BRL`,
+            url: `https://api.exchangerate.host/timeseries?start_date=${dataInicio}&end_date=${dataFinal}&base=${props.moeda}&symbols=BRL`,
         })
             .then((response) => {
                 return Object.entries(response.data.rates);
@@ -22,7 +33,7 @@ export default (props) => {
             .catch((error) => {
                 console.log(error);
             });
-
+        
         const variacaoValores = [];
         const variacaoDatas = [];
         const arr = result.sort();

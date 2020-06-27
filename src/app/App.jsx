@@ -12,8 +12,8 @@ import { BrowserRouter } from "react-router-dom";
 export default (props) => {
     return (
         <BrowserRouter>
-                <Header />
             <section className="app">
+                <Header />
                 {/* <Main /> */}
                 <Dolar />
                 {/* <Conversor /> */}

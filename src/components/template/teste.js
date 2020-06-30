@@ -31,3 +31,5 @@ const buscarVariacao = async (base) => {
 };
 
 buscarVariacao();
+
+> 8 ? dataAtual.getMonth()

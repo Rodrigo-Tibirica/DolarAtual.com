@@ -82,7 +82,12 @@ export default (params) => {
                     </ul>
                 </nav>
                 <Grafico moeda = "GBP"/>
-                <div className="libracomercial-info"></div>
+                <div className="libracomercial-info"><p>A Libra esterlina
+ Libra Esterlina é a moeda oficial de todo o Reino Unido, ela é considerada uma das mais antigas do mundo em circulação.
+
+A libra esterlina comercial é o valor que o mercado financeiro estabelece para transações de comércio exterior e movimentações financeiras feitas por empresas como importações e exportações.
+
+A libra esterlina de turismo é a cotação utilizada em casas de câmbio para a compra e venda das mesmas por pessoas físicas. Ela é baseada na Libra Esterlina Comercial, entretanto, inclui alguns custos a mais, dentre eles: Importação, Logística, Estoque e entre outros. Por tal motivo, ela é sempre mais cara que a libra comercial.</p></div>
             </Fragment>
         );
     };

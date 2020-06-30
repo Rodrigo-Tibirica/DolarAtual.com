@@ -79,7 +79,17 @@ export default (params) => {
                     </ul>
                 </nav>
                 <Grafico moeda="EUR"/>
-                <div className="eurocomercial-info"></div>
+                <div className="eurocomercial-info">
+
+                    <p>Euro
+
+Euro comercial é utilizado em transações econômicas entre empresas e governos, para fechamento de contratos de importação, exportação.
+
+Euro turismo é usado por pessoas físicas em suas viagens e afins.
+
+Euro (símbolo: €; código: EUR) é a moeda oficial da Zona do Euro, a qual é constituída por 19 dos 27 estados-membro da União Europeia: Alemanha, Áustria, Bélgica, Chipre, Eslováquia, Eslovénia, Espanha, Estónia, Finlândia, França, Grécia, Irlanda, Itália, Letónia, Lituânia, Luxemburgo, Malta, Países Baixos e Portugal.
+</p>
+                </div>
             </Fragment>
         );
     };

@@ -81,7 +81,18 @@ export default (params) => {
                 </ul>
             </nav>
             <Grafico moeda="USD"/>
-            <div className="dolarcomercial-info"></div>
+            <div className="dolarcomercial-info">
+                <p className= "titulo">Dólar</p>
+
+<p className= "subtitulo">O que é dólar?</p> <p className = "texto">O dólar dos Estados Unidos (US Dollar, USD, US$) é a moeda emitida pelos Estados Unidos através da Reserva Federal dos Estados Unidos.<br></br> 
+Ele possui moedas de 1, 5, 10, 25, 50 cents e 1 dólar. As notas que circulam hoje são de 1, 5, 10, 20, 50 e 100 dólares.<br></br>
+Ele também é a moeda oficial do Timor-Leste, Equador, El Salvador, Panamá e Porto Rico. Também é usado não-oficialmente nas Ilhas Virgens Britânicas, Ilhas Marshall, Estados Federados da Micronésia, Palau, Turks e Cacos e Zimbabwe.</p>
+<p className= "subtitulo">Dólar turismo </p>
+<p className = "texto">Representa a cotação da moeda americana em que pessoas físicas que irão usar a moeda durante uma viagem ou na compra de algum objeto.</p>
+<p className= "subtitulo">Dólar comercial != Dólar turismo -</p>
+<p className = "texto">O dólar comercial é usado em transações econômicas de empresas ou do governo, por pessoas jurídicas,pode ser utilizado também em’	 exportação e importação, enquanto o dólar turismo é o dinheiro por pessoas físicas para viagens e afins.</p></div>
+
+
         </Fragment>
     );
 };

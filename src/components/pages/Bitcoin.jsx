@@ -136,7 +136,15 @@ export default (params) => {
                 </ul>
             </nav>
             <Grafico moeda="BTC"/>
-            <div className="bitcoincomercial-info"></div>
+            <div className="bitcoincomercial-info"><p>
+            Bitcoin 
+
+É uma criptomoeda descentralizada ou um dinheiro eletrônico para transações peer-to-peer, foi criada em 2008 por um programador que tinha o pseudônimo Satashi Nakamoto. Ela é considerada a primeira o  primeiro dinheiro eletrônico do mundo descentralizada, ela é responsável pelo ressurgimento do SBL(Sistema Bancário Livre).
+
+Como funciona o Bitcoin?
+Ela é formada por uma base criptografada. A criptografia é o que garante que o sistema funcione e que todas as transações sejam feitas de forma segura e anônima. Por tal motivo, o Bitcoin é também conhecido por criptomoeda.
+
+Como o Bitcoin não é regularizado por nenhuma entidade financeira, o processo de transação dela, é realidade pelos mineradores. Por tal motivo, entender o que é o mercado e como ele funciona é de suma importância para tomar qualquer decisão dentro do mundo do Bitcoin.</p></div>
         </Fragment>
     );
 };

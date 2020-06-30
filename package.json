@@ -12,6 +12,7 @@
     "chart.js": "^2.9.3",
     "chartjs-plugin-deferred": "^1.0.1",
     "jquery": "^3.5.1",
+    "lightweight-charts": "^3.0.1",
     "node": "^14.4.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
